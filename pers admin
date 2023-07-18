@@ -28,7 +28,7 @@ function veryepictrol(x)
 		return plr
 	end
 
-	local prefix = "/"
+	local prefix = ";"
 	local LPlayer = x
 	local d;d=x.Chatted:Connect(function(msg)
 		msg = msg:lower()
@@ -75,3 +75,5 @@ for i,plr in pairs(game.Players:GetPlayers()) do
 	end
 end
 end
+print("Penis")
+print("ran sexes")
