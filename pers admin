@@ -53,7 +53,7 @@ end
 if cmd == "cmds" then
 local textChatService = game:GetService("TextChatService")
 if game.Players.LocalPlayer.Name ~= REV then
-textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("Bed tp by rev!")
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void.⭐")
 end
 end
 
