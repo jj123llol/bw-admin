@@ -40,7 +40,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
       
    elseif cmd == ";cmds" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
    local textChatService = game:GetService("TextChatService")
-   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void.⭐")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit.⭐")
    
    elseif cmd == ";ac" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
    h = target.Character:WaitForChild("HumanoidRootPart")
