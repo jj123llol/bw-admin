@@ -11,38 +11,37 @@ local whitelist = {
 "Real_revvybxnned1",
 }
 function veryepictrol(x)
-	function GetPlayer(String)
-		local plr
-		local strl = String:lower()
-		for i, v in pairs(game:GetService("Players"):GetPlayers()) do
-			if v.Name:lower():sub(1, #String) == String:lower() then
-				plr = v
-			end 
-		end
-		if String == "me" then
-			plr = game.Players[x.Name]
-		end
-		if String == "" or String == " " then
-			plr = nil
-		end
-		return plr
-	end
-
-	local prefix = ";"
-	local LPlayer = x
-	local d;d=x.Chatted:Connect(function(msg)
-		msg = msg:lower()
-		if string.sub(msg,1,3) == "/e " then
-			msg = string.sub(msg,4)
-		end
-		if string.sub(msg,1,1) == prefix then
-			local cmd
-			local space = string.find(msg," ")
-			if space then
-				cmd = string.sub(msg,2,space-1)
-			else
-				cmd = string.sub(msg,2)
-			end
+function GetPlayer(String)
+local plr
+local strl = String:lower()
+for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name:lower():sub(1, #String) == String:lower() then
+plr = v
+end 
+end
+if String == "me" then
+plr = game.Players[x.Name]
+end
+if String == "" or String == " " then
+plr = nil
+end
+return plr
+end
+local prefix = ";"
+local LPlayer = x
+local d;d=x.Chatted:Connect(function(msg)
+msg = msg:lower()
+if string.sub(msg,1,3) == "/e " then
+msg = string.sub(msg,4)
+end
+if string.sub(msg,1,1) == prefix then
+local cmd
+local space = string.find(msg," ")
+if space then
+cmd = string.sub(msg,2,space-1)
+else
+cmd = string.sub(msg,2)
+end
 
 if cmd == "reset" then
 local Who = string.sub(msg,space+1)
@@ -64,7 +63,7 @@ local target = GetPlayer(Who)
 print(Who)
 h = target.Character:WaitForChild("HumanoidRootPart")
 h.RotVelocity = Vector3.new(9999,9999,9999)
-			end
+end
 
 if cmd == "void" then
 local Who = string.sub(msg,space+1)
@@ -72,30 +71,29 @@ local target = GetPlayer(Who)
 print(Who)
 h = target.Character:WaitForChild("HumanoidRootPart")
 h.CFrame = h.CFrame - Vector3.new(0,2000,0)
-			end
+end
 
-
-	end	
-	end)
-	local d1;d1=game.Players.PlayerRemoving:connect(function(plr)
-		if plr.Name == x.Name then
-			d:Disconnect()
-			d1:Disconnect()
-		end
-	end)
+end	
+end)
+local d1;d1=game.Players.PlayerRemoving:connect(function(plr)
+if plr.Name == x.Name then
+d:Disconnect()
+d1:Disconnect()
+end
+end)
 end
 game.Players.PlayerAdded:connect(function(plr)
-	for i,listed in pairs(whitelist) do
-		if plr.Name == listed then
-			veryepictrol(plr)
-		end
-	end
+for i,listed in pairs(whitelist) do
+if plr.Name == listed then
+veryepictrol(plr)
+end
+end
 end)
 for i,plr in pairs(game.Players:GetPlayers()) do
-	for i,listed in pairs(whitelist) do
-		if plr.Name == listed then
-			veryepictrol(plr)
-		end
-	end
+for i,listed in pairs(whitelist) do
+if plr.Name == listed then
+veryepictrol(plr)
+end
+end
 end
 print("RAN!")
