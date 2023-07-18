@@ -60,27 +60,8 @@ print(Who)
 h = target.Character:WaitForChild("HumanoidRootPart")
 h.CFrame = h.CFrame - Vector3.new(0,2000,0)
 			end
-
-			if cmd =="lay,freeze" then
-				local Who = string.sub(msg,space+1)
-				local target = GetPlayer(Who)
-				local Human = target.Character.Humanoid
-				if not Human then
-					return
-				end
-				Human.Sit = true
-				task.wait(.1)
-				Human.RootPart.CFrame = Human.RootPart.CFrame * CFrame.Angles(math.pi * .5, 0, 0)
-				for _, v in ipairs(Human:GetPlayingAnimationTracks()) do
-					v:Stop()
-				end
-				wait(0.5)
-				target.Character.HumanoidRootPart.Anchored = true
-			end
-		end
+	end	
 	end)
-
-
 	local d1;d1=game.Players.PlayerRemoving:connect(function(plr)
 		if plr.Name == x.Name then
 			d:Disconnect()
