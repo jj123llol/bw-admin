@@ -1,6 +1,5 @@
 --SUPER SECRET ADMIN SCRIPT 😳
 --smd bitch
-if getgenv().sex == true then print("ALREADY RUNNING ADMIN") end
 function GetPlayer(String)
 local plr
 for i, v in pairs(game:GetService("Players"):GetPlayers()) do
