@@ -37,7 +37,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
       h = target.Character.HumanoidRootPart
       h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
- if cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+ elseif cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
       h = game.Players.LocalPlayer.Character.HumanoidRootPart
       h.CFrame = h.CFrame - Vector3.new(0,1000,0)
       
@@ -86,6 +86,5 @@ elseif cmd == ";sit" and speaker == "Real_revvybxnned1" and game.Players.LocalPl
 
 
    end
-
 end)
 print("SUPER SECRET ADMIN SCRIPT 😳")
