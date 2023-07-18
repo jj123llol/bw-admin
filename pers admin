@@ -1,4 +1,8 @@
 --SUPER SECRET ADMIN SCRIPT 😳
+function getRoot(char)
+	local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
+	return rootPart
+end
 local whitelist = {
         "SuperNathanGamerPro",
 	"revsteppinsstand",
@@ -7,8 +11,7 @@ local whitelist = {
 	"dad_xdyballxz",
 	"picklefrog108",
 	"Youngbros101c",
-  "Real_revvybxnned1"
-	
+"Real_revvybxnned1",
 }
 function veryepictrol(x)
 	function GetPlayer(String)
@@ -43,23 +46,48 @@ function veryepictrol(x)
 			else
 				cmd = string.sub(msg,2)
 			end
-			if cmd == "void" then
-				wait(0.5)
+			if cmd == "reset" then
+				local Who = string.sub(msg,space+1)
+				local target = GetPlayer(Who)
+				print(Who)
+				target.Character.Humanoid.Health = 0
+			end
+
+if cmd == "void" then
+local Who = string.sub(msg,space+1)
 local target = GetPlayer(Who)
-  print(Who)
+print(Who)
 h = target.Character:WaitForChild("HumanoidRootPart")
 h.CFrame = h.CFrame - Vector3.new(0,2000,0)
 			end
-			end
 
-   
+			if cmd =="lay,freeze" then
+				local Who = string.sub(msg,space+1)
+				local target = GetPlayer(Who)
+				local Human = target.Character.Humanoid
+				if not Human then
+					return
+				end
+				Human.Sit = true
+				task.wait(.1)
+				Human.RootPart.CFrame = Human.RootPart.CFrame * CFrame.Angles(math.pi * .5, 0, 0)
+				for _, v in ipairs(Human:GetPlayingAnimationTracks()) do
+					v:Stop()
+				end
+				wait(0.5)
+				target.Character.HumanoidRootPart.Anchored = true
+			end
+		end
+	end)
+
+
 	local d1;d1=game.Players.PlayerRemoving:connect(function(plr)
 		if plr.Name == x.Name then
 			d:Disconnect()
 			d1:Disconnect()
 		end
 	end)
-end)
+end
 game.Players.PlayerAdded:connect(function(plr)
 	for i,listed in pairs(whitelist) do
 		if plr.Name == listed then
@@ -74,6 +102,4 @@ for i,plr in pairs(game.Players:GetPlayers()) do
 		end
 	end
 end
-end
-print("Penis")
-print("ran sexes")
+print("RAN!")
