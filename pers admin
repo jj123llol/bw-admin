@@ -109,6 +109,9 @@ local sexlist = {
     
     elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
        target:Kick("skill issue tbh")
+
+      elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
+       game.Players.LocalPlayer:Kick("skill issue tbh")
     
     elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
        target.Character.Humanoid.Sit = true
