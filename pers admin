@@ -50,3 +50,4 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    target.Character.Humanoid.Health = 0
    end
 end)
+print("SUPER SECRET ADMIN SCRIPT 😳")
