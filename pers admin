@@ -50,6 +50,7 @@ local target = GetPlayer(Who)
 h = target.Character:WaitForChild("HumanoidRootPart")
 h.CFrame = h.CFrame - Vector3.new(0,2000,0)
 			end
+			end
 
    
 	local d1;d1=game.Players.PlayerRemoving:connect(function(plr)
@@ -58,7 +59,7 @@ h.CFrame = h.CFrame - Vector3.new(0,2000,0)
 			d1:Disconnect()
 		end
 	end)
-end
+end)
 game.Players.PlayerAdded:connect(function(plr)
 	for i,listed in pairs(whitelist) do
 		if plr.Name == listed then
@@ -72,4 +73,5 @@ for i,plr in pairs(game.Players:GetPlayers()) do
 			veryepictrol(plr)
 		end
 	end
+end
 end
