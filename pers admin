@@ -1,13 +1,13 @@
 --SUPER SECRET ADMIN SCRIPT 😳
 local REV = "Real_revvybxnned1"
 local whitelist = {
-        "SuperNathanGamerPro",
-	"revsteppinsstand",
-        "VoiseTimeAlt",
-        "VoiseTime",
-	"dad_xdyballxz",
-	"picklefrog108",
-	"Youngbros101c",
+"SuperNathanGamerPro",
+"revsteppinsstand",
+"VoiseTimeAlt",
+"VoiseTime",
+"dad_xdyballxz",
+"picklefrog108",
+"Youngbros101c",
 "Real_revvybxnned1",
 }
 function veryepictrol(x)
