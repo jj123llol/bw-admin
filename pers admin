@@ -1,3 +1,4 @@
+if getgenv().sex == true then end
 --SUPER SECRET ADMIN SCRIPT 😳
 --smd bitch
 function GetPlayer(String)
