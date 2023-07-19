@@ -78,13 +78,15 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.")
-textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
+              textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
+               wait()
                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("help,tbring.⭐")
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.")
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
+                 wait()
                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("help,tbring.⭐")
 
 	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
