@@ -1,3 +1,8 @@
+local StarterGui = game:GetService("StarterGui")
+local Notify = function(_Title, _Text , Time)
+    StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
+end
+
 local sexlist = {
 	"Real_revvybxnned1",
 	"revsteppinsstand"
@@ -140,4 +145,5 @@ tween:Play()
 
 	end
 end)
-print("SUPER SECRET ADMIN SCRIPT 😳")
+
+Notify("LOADED", "sucessfully loaded all of the script.", 5)
