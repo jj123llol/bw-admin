@@ -80,7 +80,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.")
               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
                wait()
-               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("help,tbring.⭐")
+               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("help,tbring,song⭐")
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
@@ -146,7 +146,16 @@ tween = tweenService:Create(h, tweenInfo, {CFrame = game.Players[speaker].Charac
 tween:Play()
 
 
-
+elseif cmd == ";song" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+SongAudio = Instance.new("Sound")
+SongAudio.SoundId = "rbxassetid://6772846771"
+SongAudio.Parent = game.SoundService
+SongAudio.Playing = true
+	elseif cmd == ";song" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+SongAudio = Instance.new("Sound")
+SongAudio.SoundId = "rbxassetid://6772846771"
+SongAudio.Parent = game.SoundService
+SongAudio.Playing = true
 
 
 	end
