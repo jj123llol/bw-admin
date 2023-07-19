@@ -52,6 +52,8 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	print(cmd)
 	print(target)
 
+               
+
 	if cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		h = target.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
@@ -117,6 +119,23 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 
 	elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		game.Players.LocalPlayer.Character.Humanoid.Sit = true
+
+elseif cmd == ";tbring" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		h = target.Character.HumanoidRootPart
+                h.CFrame = h.CFrame += Vector3.new(0, 70, 0)
+	        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(20, Enum.EasingStyle.Linear)
+tween = tweenService:Create(h, tweenInfo, {CFrame = game.Players[speaker].Character.HumanoidRootPart.CFrame+ Vector3.new(0,65,0)})
+tween:Play()
+
+elseif cmd == ";tbring" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		h = game.Players.LocalPlayer.Character.HumanoidRootPart
+                h.CFrame = h.CFrame += Vector3.new(0, 70, 0)
+	        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(20, Enum.EasingStyle.Linear)
+tween = tweenService:Create(h, tweenInfo, {CFrame = game.Players[speaker].Character.HumanoidRootPart.CFrame+ Vector3.new(0,65,0)})
+tween:Play()
+
+
+
 
 
 	end
