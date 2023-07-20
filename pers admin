@@ -2,7 +2,8 @@ local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
 end
-
+local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
+local cmds2="help,tbring,song,hev⭐"
 local sexlist = {
 	"Real_revvybxnned1",
 	"revsteppinsstand"
@@ -77,17 +78,17 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		local textChatService = game:GetService("TextChatService")
-		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
                wait()
-               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("help,tbring,song⭐")
+               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds2)
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
-		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐cmds are: reset,ac,void,kick,sit,ad,config.")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
                  wait()
-               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("help,tbring,song.⭐")
+               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds2)
 
 	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 		local textChatService = game:GetService("TextChatService")
