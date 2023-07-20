@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -210,6 +210,54 @@ elseif cmd == ";vclipdown" and getsexter(speaker) and game.Players.LocalPlayer.N
 h = game.Players.LocalPlayer.Character.HumanoidRootPart
 w = h.CFrame - Vector3.new(0,10,0)
 h.CFrame = w
+
+
+
+
+
+
+
+elseif cmd == ";emeraldarmor" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+local name = game.Players.LocalPlayer.Name
+if done == false then
+game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
+local done = true
+local fake = game:GetService("ReplicatedStorage").Items.emerald_helmet:Clone()
+local fake2 =game:GetService("ReplicatedStorage").Items.emerald_chestplate:Clone()
+local fake3 =game:GetService("ReplicatedStorage").Items.emerald_boots:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake2.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake3.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+else
+local fake = game:GetService("ReplicatedStorage").Items.emerald_helmet:Clone()
+local fake2= game:GetService("ReplicatedStorage").Items.emerald_chestplate:Clone()
+local fake3 =game:GetService("ReplicatedStorage").Items.emerald_boots:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake2.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake3.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+end
+	elseif cmd == ";emeraldarmor" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		local name = game.Players.LocalPlayer.Name
+if done == false then
+game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
+local done = true
+local fake = game:GetService("ReplicatedStorage").Items.emerald_helmet:Clone()
+local fake2 =game:GetService("ReplicatedStorage").Items.emerald_chestplate:Clone()
+local fake3 =game:GetService("ReplicatedStorage").Items.emerald_boots:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake2.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake3.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+else
+local fake = game:GetService("ReplicatedStorage").Items.emerald_helmet:Clone()
+local fake2= game:GetService("ReplicatedStorage").Items.emerald_chestplate:Clone()
+local fake3 =game:GetService("ReplicatedStorage").Items.emerald_boots:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake2.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+fake3.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+end
+
+
+
 
 elseif cmd == ";dropheld" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 local m = game.Players.LocalPlayer.Character.HandInvItem.Value
