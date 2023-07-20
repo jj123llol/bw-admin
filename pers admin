@@ -3,7 +3,7 @@ local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
-local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore⭐"
+local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -228,6 +228,25 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+    end
+else
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐failed to break bow, I have no arrows!⭐")
+    end
+
+
+elseif cmd == ";breakbow" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐must have arrows to break bow, attempting!⭐")
+for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
+    if v.Name == "arrow" then
+v:Destroy()
+    end
+    end
+
+elseif cmd == ";breakbow" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐must have arrows to break bow, attempting!⭐")
+for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
+    if v.Name == "arrow" then
+v:Destroy()
     end
     end
 
