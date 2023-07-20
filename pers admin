@@ -63,6 +63,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	print(message)
 	print(cmd)
 	print(target)
+        print(mat)
 
                
 
