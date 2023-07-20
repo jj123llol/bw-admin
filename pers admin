@@ -36,6 +36,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	local args = message:split(" ")
 	local cmd = args[1]
 	local who = args[2]
+        local mat = args[3]
 	local target = GetPlayer(who)
 	local function getsexter(sexdude)
 		local x = false
@@ -188,6 +189,32 @@ elseif cmd == ";vclipdown" and getsexter(speaker) and game.Players.LocalPlayer.N
 h = game.Players.LocalPlayer.Character.HumanoidRootPart
 w = h.CFrame - Vector3.new(0,10,0)
 h.CFrame = w
+
+elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
+for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
+    if v.Name == mat then
+local args = {
+    [1] = {
+        ["item"] = v
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+    end
+    end
+
+elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
+    if v.Name == mat then
+local args = {
+    [1] = {
+        ["item"] = v
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+    end
+    end
 
 
 	end
