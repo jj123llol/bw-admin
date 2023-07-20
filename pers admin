@@ -3,7 +3,7 @@ local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
-local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow⭐"
+local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -205,6 +205,27 @@ h = game.Players.LocalPlayer.Character.HumanoidRootPart
 w = h.CFrame - Vector3.new(0,10,0)
 h.CFrame = w
 
+elseif cmd == ";dropheld" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
+local m = game.Players.LocalPlayer.Character.HandInvItem.Value
+local args = {
+    [1] = {
+        ["item"] = m
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+
+elseif cmd == ";dropheld" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
+local m = game.Players.LocalPlayer.Character.HandInvItem.Value
+local args = {
+    [1] = {
+        ["item"] = m
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+
+
 elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
     if v.Name == mat then
@@ -229,8 +250,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
     end
-else
-textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐failed to break bow, I have no arrows!⭐")
     end
 
 
