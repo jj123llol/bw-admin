@@ -221,7 +221,6 @@ h.CFrame = w
 elseif cmd == ";emeraldarmor" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 local name = game.Players.LocalPlayer.Name
 if done == false then
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local done = true
 local fake = game:GetService("ReplicatedStorage").Items.emerald_helmet:Clone()
 local fake2 =game:GetService("ReplicatedStorage").Items.emerald_chestplate:Clone()
@@ -240,7 +239,6 @@ end
 	elseif cmd == ";emeraldarmor" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		local name = game.Players.LocalPlayer.Name
 if done == false then
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local done = true
 local fake = game:GetService("ReplicatedStorage").Items.emerald_helmet:Clone()
 local fake2 =game:GetService("ReplicatedStorage").Items.emerald_chestplate:Clone()
@@ -286,7 +284,6 @@ game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("
 elseif cmd == ";telepearl" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 local name = game.Players.LocalPlayer.Name
 if done == false then
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local done = true
 local fake = game:GetService("ReplicatedStorage").Items.telepearl:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
@@ -298,7 +295,6 @@ end
 elseif cmd == ";telepearl" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 local name = game.Players.LocalPlayer.Name
 if done == false then
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local done = true
 local fake = game:GetService("ReplicatedStorage").Items.telepearl:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
@@ -311,7 +307,6 @@ elseif cmd == ";apple" and getsexter(speaker) and game.Players.LocalPlayer.Name 
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local fake = game:GetService("ReplicatedStorage").Items["golden_apple"]:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
 else
@@ -322,7 +317,6 @@ elseif cmd == ";apple" and getsexter(speaker) and game.Players.LocalPlayer.Name 
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local fake = game:GetService("ReplicatedStorage").Items["golden_apple"]:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
 else
@@ -333,7 +327,6 @@ end
 elseif cmd == ";rageblade" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 local name = game.Players.LocalPlayer.Name
 if done == false then
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local done = true
 local fake = game:GetService("ReplicatedStorage").Items.rageblade:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
@@ -345,7 +338,6 @@ end
 elseif cmd == ";rageblade" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 local name = game.Players.LocalPlayer.Name
 if done == false then
-game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 local done = true
 local fake = game:GetService("ReplicatedStorage").Items.rageblade:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
