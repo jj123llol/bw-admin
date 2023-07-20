@@ -6,7 +6,8 @@ local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev⭐"
 local sexlist = {
 	"Real_revvybxnned1",
-	"revsteppinsstand"
+	"revsteppinsstand",
+        "rootyb8per"
 }
 function GetPlayer(String)
 	local plr
