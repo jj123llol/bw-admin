@@ -157,6 +157,20 @@ SongAudio.SoundId = "rbxassetid://6772846771"
 SongAudio.Parent = game.SoundService
 SongAudio.Playing = true
 
+elseif cmd == ";hev" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+h = target.Character.HumanoidRootPart
+local hev = h.CFrame + Vector3.new(0,900,0)
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(100, Enum.EasingStyle.Linear)
+tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = hev})
+tween:Play()
+
+elseif cmd == ";hev" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+h = game.Players.LocalPlayer.Character.HumanoidRootPart
+local hev = h.CFrame + Vector3.new(0,900,0)
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(100, Enum.EasingStyle.Linear)
+tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = hev})
+tween:Play()
+
 
 	end
 end)
