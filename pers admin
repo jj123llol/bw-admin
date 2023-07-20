@@ -173,6 +173,12 @@ tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(100, En
 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = hev})
 tween:Play()
 
+elseif cmd == ";lobby" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.TeleportToLobby:FireServer()
+
+elseif cmd == ";lobby" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.TeleportToLobby:FireServer()
+
 
 	end
 end)
