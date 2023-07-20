@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -307,8 +307,28 @@ local fake = game:GetService("ReplicatedStorage").Items.telepearl:Clone()
 fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
 end
 
-
-
+elseif cmd == ";apple" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
+local name = game.Players.LocalPlayer.Name
+if done == false then
+local done = true
+game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
+local fake = game:GetService("ReplicatedStorage").Items["golden_apple"]:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+else
+local fake = game:GetService("ReplicatedStorage").Items["golden_apple"]:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+end
+elseif cmd == ";apple" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
+local name = game.Players.LocalPlayer.Name
+if done == false then
+local done = true
+game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
+local fake = game:GetService("ReplicatedStorage").Items["golden_apple"]:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+else
+local fake = game:GetService("ReplicatedStorage").Items["golden_apple"]:Clone()
+fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
+end
 
 elseif cmd == ";rageblade" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 local name = game.Players.LocalPlayer.Name
