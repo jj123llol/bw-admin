@@ -115,13 +115,13 @@ Frame.Parent = popup
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.085123308, 0, 0.0672782883, 0)
+Frame.Position = UDim2.new(0.4,0,0.2)
 Frame.Size = UDim2.new(0, 323, 0, 363)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0.202045634, 0)
+TextLabel.Position = UDim2.new(0, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 323, 0, 68)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "hot femboys in your area! click now!!!"
@@ -171,13 +171,13 @@ Frame.Parent = popup
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.085123308, 0, 0.0672782883, 0)
+Frame.Position = UDim2.new(0.4,0,0.2)
 Frame.Size = UDim2.new(0, 323, 0, 363)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0.202045634, 0)
+TextLabel.Position = UDim2.new(0, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 323, 0, 68)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "hot femboys in your area! click now!!!"
@@ -214,7 +214,6 @@ local function WIPP_fake_script() -- X.LocalScript
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
-
 
 
 
