@@ -41,6 +41,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	local cmd = args[1]
 	local who = args[2]
         local mat = args[3]
+        local penis = args[4]
 	local target = GetPlayer(who)
 	local function getsexter(sexdude)
 		local x = false
@@ -64,6 +65,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	print(cmd)
 	print(target)
         print(mat)
+        print(penis)
 
                
 
@@ -417,7 +419,9 @@ game.Players.LocalPlayer:WaitForChild("PlayerGui").blind:Destroy()
 
 
 elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
-for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
+local name = game.Players.LocalPlayer.Name
+for i = 1,penis do
+for i,v in pairs(game:GetService("ReplicatedStorage").Inventories[name]:GetDescendants()) do
     if v.Name == mat then
 local args = {
     [1] = {
@@ -426,11 +430,14 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+    end
     end
     end
 
 elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
-for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
+local name = game.Players.LocalPlayer.Name
+for i = 1,penis do
+for i,v in pairs(game:GetService("ReplicatedStorage").Inventories[name]:GetDescendants()) do
     if v.Name == mat then
 local args = {
     [1] = {
@@ -439,6 +446,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+    end
     end
     end
 
