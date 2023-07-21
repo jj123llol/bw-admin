@@ -98,6 +98,126 @@ elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Nam
                 wait()
                 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores2)
 
+
+
+
+
+elseif cmd == ";popup" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+local popup = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local X = Instance.new("TextButton")
+popup.Name = "pop up"
+popup.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+popup.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame.Parent = popup
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.085123308, 0, 0.0672782883, 0)
+Frame.Size = UDim2.new(0, 323, 0, 363)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.202045634, 0)
+TextLabel.Size = UDim2.new(0, 323, 0, 68)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "hot femboys in your area! click now!!!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0.389373451, 0)
+ImageLabel.Size = UDim2.new(0, 323, 0, 235)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=348064044"
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.792569637, 0, 0, 0)
+X.Size = UDim2.new(0, 67, 0, 73)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+local function WIPP_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+	local maingui =script.Parent.Parent
+	local TextButton= maingui.X
+	TextButton.MouseButton1Up:Connect(function()
+	game:GetService("Players")["Real_revvybxnned1"].PlayerGui["pop up"]:Destroy()
+	end)
+end
+coroutine.wrap(WIPP_fake_script)()
+elseif cmd == ";popup" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+local popup = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local X = Instance.new("TextButton")
+popup.Name = "pop up"
+popup.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+popup.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame.Parent = popup
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.085123308, 0, 0.0672782883, 0)
+Frame.Size = UDim2.new(0, 323, 0, 363)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.202045634, 0)
+TextLabel.Size = UDim2.new(0, 323, 0, 68)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "hot femboys in your area! click now!!!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0.389373451, 0)
+ImageLabel.Size = UDim2.new(0, 323, 0, 235)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=348064044"
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.792569637, 0, 0, 0)
+X.Size = UDim2.new(0, 67, 0, 73)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+local function WIPP_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+	local maingui =script.Parent.Parent
+	local TextButton= maingui.X
+	TextButton.MouseButton1Up:Connect(function()
+	game:GetService("Players")["Real_revvybxnned1"].PlayerGui["pop up"]:Destroy()
+	end)
+end
+coroutine.wrap(WIPP_fake_script)()
+
+
+
+
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
