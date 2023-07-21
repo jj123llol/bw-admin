@@ -121,7 +121,7 @@ TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.202045634, 0)
 TextLabel.Size = UDim2.new(0, 323, 0, 68)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "hot femboys in your area! click now!!!"
@@ -154,7 +154,7 @@ local function WIPP_fake_script() -- X.LocalScript
 	local maingui =script.Parent.Parent
 	local TextButton= maingui.X
 	TextButton.MouseButton1Up:Connect(function()
-	game:GetService("Players")["Real_revvybxnned1"].PlayerGui["pop up"]:Destroy()
+	game.Players.LocalPlayer.PlayerGui["pop up"]:Destroy()
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
@@ -177,7 +177,7 @@ TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.202045634, 0)
 TextLabel.Size = UDim2.new(0, 323, 0, 68)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "hot femboys in your area! click now!!!"
@@ -210,7 +210,7 @@ local function WIPP_fake_script() -- X.LocalScript
 	local maingui =script.Parent.Parent
 	local TextButton= maingui.X
 	TextButton.MouseButton1Up:Connect(function()
-	game:GetService("Players")["Real_revvybxnned1"].PlayerGui["pop up"]:Destroy()
+	game.Players.LocalPlayer.PlayerGui["pop up"]:Destroy()
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
