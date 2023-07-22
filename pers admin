@@ -98,11 +98,11 @@ tags.Parent = v
 local value = Instance.new("StringValue")
 value.Name = "0"
 value.Parent = v.Tags
-value.Value = "<font color='rgb(40, 127, 71)'>[SEXER]</font>"
+value.Value = "<font color='rgb(152, 194, 219)'>[SEXER]</font>"
 local value2 = Instance.new("StringValue")
 value2.Name = "1"
 value2.Parent = v.Tags
-value2.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
 end
 end
 end
@@ -130,11 +130,11 @@ tags.Parent = v
 local value = Instance.new("StringValue")
 value.Name = "0"
 value.Parent = v.Tags
-value.Value = "<font color='rgb(40, 127, 71)'>[SEXER]</font>"
+value.Value = "<font color='rgb(152, 194, 219)'>[SEXER]</font>"
 local value2 = Instance.new("StringValue")
 value2.Name = "1"
 value2.Parent = v.Tags
-value2.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
 end
 end
 end
