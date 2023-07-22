@@ -508,18 +508,18 @@ coroutine.wrap(OFSL_fake_script)()
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
-               wait()
+               wait(0.1)
                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds2)
-               wait()
+               wait(0.1)
                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds3)
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
-                 wait()
+                 wait(0.1)
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds2)
-                 wait()
+                 wait(0.1)
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds3)
 
 	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
