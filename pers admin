@@ -221,6 +221,91 @@ local function WIPP_fake_script() -- X.LocalScript
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
+local popup3 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local Copy = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+popup3.Name = "pop up3"
+popup3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+popup3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame.Parent = popup3
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.112728719, 0, 0.6198776871, 0)
+Frame.Size = UDim2.new(0, 422, 0, 249)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.00181112997, 0)
+TextLabel.Size = UDim2.new(0, 412, 0, 113)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "make sure to subscribe"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.840278983, 0, 0, 0)
+X.Size = UDim2.new(0, 67, 0, 73)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+Copy.Name = "Copy"
+Copy.Parent = Frame
+Copy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Copy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.248987511, 0, 0.449301302, 0)
+Copy.Size = UDim2.new(0, 200, 0, 50)
+Copy.Font = Enum.Font.SourceSans
+Copy.Text = "copy channel link"
+Copy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Copy.TextScaled = true
+Copy.TextSize = 14.000
+Copy.TextWrapped = true
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0189573467, 0, 0.722891569, 0)
+TextLabel_2.Size = UDim2.new(0, 413, 0, 69)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "https://www.youtube.com/@normalexploiter123"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+local function SLLW_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+	local maingui =script.Parent.Parent
+	local TextButton= maingui.X
+	TextButton.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.PlayerGui["pop up3"]:Destroy()
+		game.Players.LocalPlayer.PlayerGui["pop up3"]:Destroy()
+	end)
+end
+coroutine.wrap(SLLW_fake_script)()
+local function OFSL_fake_script() -- Copy.LocalScript 
+	local script = Instance.new('LocalScript', Copy)
+
+	local maingui =script.Parent.Parent
+	local TextButton= maingui.Copy
+	TextButton.MouseButton1Up:Connect(function()
+	setclipboard("https://www.youtube.com/@normalexploiter123")
+	end)
+end
+coroutine.wrap(OFSL_fake_script)()
 elseif cmd == ";popups" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 local popup = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -332,6 +417,91 @@ local function WIPP_fake_script() -- X.LocalScript
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
+local popup3 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local Copy = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+popup3.Name = "pop up3"
+popup3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+popup3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame.Parent = popup3
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.112728719, 0, 0.6198776871, 0)
+Frame.Size = UDim2.new(0, 422, 0, 249)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.00181112997, 0)
+TextLabel.Size = UDim2.new(0, 412, 0, 113)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "make sure to subscribe"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.840278983, 0, 0, 0)
+X.Size = UDim2.new(0, 67, 0, 73)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+Copy.Name = "Copy"
+Copy.Parent = Frame
+Copy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Copy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.248987511, 0, 0.449301302, 0)
+Copy.Size = UDim2.new(0, 200, 0, 50)
+Copy.Font = Enum.Font.SourceSans
+Copy.Text = "copy channel link"
+Copy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Copy.TextScaled = true
+Copy.TextSize = 14.000
+Copy.TextWrapped = true
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0189573467, 0, 0.722891569, 0)
+TextLabel_2.Size = UDim2.new(0, 413, 0, 69)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "https://www.youtube.com/@normalexploiter123"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+local function SLLW_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+	local maingui =script.Parent.Parent
+	local TextButton= maingui.X
+	TextButton.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.PlayerGui["pop up3"]:Destroy()
+		game.Players.LocalPlayer.PlayerGui["pop up3"]:Destroy()
+	end)
+end
+coroutine.wrap(SLLW_fake_script)()
+local function OFSL_fake_script() -- Copy.LocalScript 
+	local script = Instance.new('LocalScript', Copy)
+
+	local maingui =script.Parent.Parent
+	local TextButton= maingui.Copy
+	TextButton.MouseButton1Up:Connect(function()
+	setclipboard("https://www.youtube.com/@normalexploiter123")
+	end)
+end
+coroutine.wrap(OFSL_fake_script)()
 
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
