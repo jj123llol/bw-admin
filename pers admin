@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash,retags⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -72,6 +72,42 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 	if cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		h = target.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
+
+
+if cmd == ";retags" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+for i,v in pairs(game.Players:GetChildren()) do
+for i,b in pairs(sexlist) do
+ppl = b
+if v.Name == b and v:FindFirstChild("Tags",true) then
+v.Tags["0"].Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+elseif v.Name == b  then
+local tags = Instance.new("Folder")
+tags.Name = "Tags"
+tags.Parent = v
+local value = Instance.new("StringValue")
+value.Name = "0"
+value.Parent = v.Tags
+value.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+end
+end
+end
+if cmd == ";retags" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+for i,v in pairs(game.Players:GetChildren()) do
+for i,b in pairs(sexlist) do
+ppl = b
+if v.Name == b and v:FindFirstChild("Tags",true) then
+v.Tags["0"].Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+elseif v.Name == b  then
+local tags = Instance.new("Folder")
+tags.Name = "Tags"
+tags.Parent = v
+local value = Instance.new("StringValue")
+value.Name = "0"
+value.Parent = v.Tags
+value.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+end
+end
+end
 
 	elseif cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		h = game.Players.LocalPlayer.Character.HumanoidRootPart
