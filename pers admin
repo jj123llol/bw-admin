@@ -79,7 +79,18 @@ for i,v in pairs(game.Players:GetChildren()) do
 for i,b in pairs(sexlist) do
 ppl = b
 if v.Name == b and v:FindFirstChild("Tags",true) then
-v.Tags["0"].Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+v.Tags:Destroy()
+local tags = Instance.new("Folder")
+tags.Name = "Tags"
+tags.Parent = v
+local value = Instance.new("StringValue")
+value.Name = "0"
+value.Parent = v.Tags
+value.Value = "<font color='rgb(40, 127, 71)'>[SEXER]</font>"
+local value2 = Instance.new("StringValue")
+value2.Name = "1"
+value2.Parent = v.Tags
+value2.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
 elseif v.Name == b  then
 local tags = Instance.new("Folder")
 tags.Name = "Tags"
@@ -87,7 +98,11 @@ tags.Parent = v
 local value = Instance.new("StringValue")
 value.Name = "0"
 value.Parent = v.Tags
-value.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+value.Value = "<font color='rgb(40, 127, 71)'>[SEXER]</font>"
+local value2 = Instance.new("StringValue")
+value2.Name = "1"
+value2.Parent = v.Tags
+value2.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
 end
 end
 end
@@ -96,7 +111,18 @@ for i,v in pairs(game.Players:GetChildren()) do
 for i,b in pairs(sexlist) do
 ppl = b
 if v.Name == b and v:FindFirstChild("Tags",true) then
-v.Tags["0"].Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+v.Tags:Destroy()
+local tags = Instance.new("Folder")
+tags.Name = "Tags"
+tags.Parent = v
+local value = Instance.new("StringValue")
+value.Name = "0"
+value.Parent = v.Tags
+value.Value = "<font color='rgb(40, 127, 71)'>[SEXER]</font>"
+local value2 = Instance.new("StringValue")
+value2.Name = "1"
+value2.Parent = v.Tags
+value2.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
 elseif v.Name == b  then
 local tags = Instance.new("Folder")
 tags.Name = "Tags"
@@ -104,7 +130,11 @@ tags.Parent = v
 local value = Instance.new("StringValue")
 value.Name = "0"
 value.Parent = v.Tags
-value.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
+value.Value = "<font color='rgb(40, 127, 71)'>[SEXER]</font>"
+local value2 = Instance.new("StringValue")
+value2.Name = "1"
+value2.Parent = v.Tags
+value2.Value = "<font color='rgb(40, 127, 71)'>[ADMIN]</font>"
 end
 end
 end
