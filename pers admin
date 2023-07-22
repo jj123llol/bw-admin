@@ -161,6 +161,7 @@ local function WIPP_fake_script() -- X.LocalScript
 	local TextButton= maingui.X
 	TextButton.MouseButton1Up:Connect(function()
 	game.Players.LocalPlayer.PlayerGui["pop up"]:Destroy()
+        game.Players.LocalPlayer.PlayerGui["pop up"]:Destroy()
 	end)
 end
 coroutine.wrap(WIPP_fake_script)()
@@ -215,6 +216,7 @@ local function WIPP_fake_script() -- X.LocalScript
 	local maingui =script.Parent.Parent
 	local TextButton= maingui.X
 	TextButton.MouseButton1Up:Connect(function()
+	game.Players.LocalPlayer.PlayerGui["pop up2"]:Destroy()
 	game.Players.LocalPlayer.PlayerGui["pop up2"]:Destroy()
 	end)
 end
