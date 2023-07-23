@@ -74,7 +74,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
 
-if cmd == ";retags" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+elseif cmd == ";retags" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 for i,v in pairs(game.Players:GetChildren()) do
 for i,b in pairs(sexlist) do
 ppl = b
@@ -106,7 +106,7 @@ value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
 end
 end
 end
-if cmd == ";retags" and getsexter(speaker) and who == "." then
+elseif cmd == ";retags" and getsexter(speaker) and who == "." then
 for i,v in pairs(game.Players:GetChildren()) do
 for i,b in pairs(sexlist) do
 ppl = b
