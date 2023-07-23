@@ -9,7 +9,7 @@ local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
-	"Real_revvybxnned1",
+	"Real_revvybxnned2",
 	"revsteppinsstand",
         "rootyb8per"
 }
