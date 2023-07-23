@@ -106,7 +106,7 @@ value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
 end
 end
 end
-if cmd == ";retags" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+if cmd == ";retags" and getsexter(speaker) and who == "." then
 for i,v in pairs(game.Players:GetChildren()) do
 for i,b in pairs(sexlist) do
 ppl = b
