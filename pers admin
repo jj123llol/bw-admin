@@ -21,9 +21,8 @@ local speaker = tostring(sex.TextSource)
 for i,b in pairs(sexlist) do
 if speaker == b then
 local args = sex.Text:split(" ")
-local name = game.Players.LocalPlayer.Name
 local sym = ":"
-sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..name..""..sym..""
+sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
 end
 end
 end)
