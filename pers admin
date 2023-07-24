@@ -1,4 +1,4 @@
-local owner = "Real_revvybxnned2"
+local owner = "Real_revvybxnned3"
 local kos = "hippysipp_y"
 local done = false
 local StarterGui = game:GetService("StarterGui")
@@ -12,7 +12,7 @@ local cmds4 = "lava,dead,troll,byfron,fakeban,check,ban⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
-	"Real_revvybxnned2",
+	"Real_revvybxnned3",
 	"revsteppinsstand",
         "rootyb8per"
 }
@@ -50,7 +50,7 @@ function GetPlayer(String)
 	return plr
 end
 
-local REV = "Real_revvybxnned2"
+local REV = "Real_revvybxnned3"
 local TextChatService = game:GetService("TextChatService")
 local Listening;
 
