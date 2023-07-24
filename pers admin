@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash,retags"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
 local cmds4 = "lava,dead,troll⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
@@ -14,6 +14,20 @@ local sexlist = {
 	"revsteppinsstand",
         "rootyb8per"
 }
+
+local textChatService = game:GetService("TextChatService")
+textChatService.MessageReceived:Connect(function(sex)
+local speaker = tostring(sex.TextSource)
+for i,b in pairs(sexlist) do
+if speaker == b then
+local args = sex.Text:split(" ")
+local name = game.Players.LocalPlayer.Name
+local sym = ":"
+sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..name..""..sym..""
+end
+end
+end)
+
 function GetPlayer(String)
 	local plr
 	for i, v in pairs(game:GetService("Players"):GetPlayers()) do
@@ -75,70 +89,7 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
 
-elseif cmd == ";retags" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
-for i,v in pairs(game.Players:GetChildren()) do
-for i,b in pairs(sexlist) do
-ppl = b
-if v.Name == b and v:FindFirstChild("Tags",true) then
-v.Tags:Destroy()
-local tags = Instance.new("Folder")
-tags.Name = "Tags"
-tags.Parent = v
-local value = Instance.new("StringValue")
-value.Name = "0"
-value.Parent = v.Tags
-value.Value = "<font color='rgb(152, 194, 219)'>[SEXER]</font>"
-local value2 = Instance.new("StringValue")
-value2.Name = "1"
-value2.Parent = v.Tags
-value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
-elseif v.Name == b  then
-local tags = Instance.new("Folder")
-tags.Name = "Tags"
-tags.Parent = v
-local value = Instance.new("StringValue")
-value.Name = "0"
-value.Parent = v.Tags
-value.Value = "<font color='rgb(152, 194, 219)'>[SEXER]</font>"
-local value2 = Instance.new("StringValue")
-value2.Name = "1"
-value2.Parent = v.Tags
-value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
-end
-end
-end
-elseif cmd == ";retags" and getsexter(speaker) and who == "." then
-for i,v in pairs(game.Players:GetChildren()) do
-for i,b in pairs(sexlist) do
-ppl = b
-if v.Name == b and v:FindFirstChild("Tags",true) then
-v.Tags:Destroy()
-local tags = Instance.new("Folder")
-tags.Name = "Tags"
-tags.Parent = v
-local value = Instance.new("StringValue")
-value.Name = "0"
-value.Parent = v.Tags
-value.Value = "<font color='rgb(152, 194, 219)'>[SEXER]</font>"
-local value2 = Instance.new("StringValue")
-value2.Name = "1"
-value2.Parent = v.Tags
-value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
-elseif v.Name == b  then
-local tags = Instance.new("Folder")
-tags.Name = "Tags"
-tags.Parent = v
-local value = Instance.new("StringValue")
-value.Name = "0"
-value.Parent = v.Tags
-value.Value = "<font color='rgb(152, 194, 219)'>[SEXER]</font>"
-local value2 = Instance.new("StringValue")
-value2.Name = "1"
-value2.Parent = v.Tags
-value2.Value = "<font color='rgb(248, 217, 109)'>[ADMIN]</font>"
-end
-end
-end
+
 
 
 
