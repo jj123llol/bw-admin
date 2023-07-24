@@ -1,4 +1,5 @@
 local owner = "Real_revvybxnned2"
+local kos = "hippysipp_y"
 local done = false
 local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
@@ -23,10 +24,10 @@ for i,b in pairs(sexlist) do
 if speaker == b then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
-elseif speaker == "hippysipp_y" then
+elseif speaker == kos then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[adolf hitler]</font> "..speaker..""..sym..""
-elseif speaker == game.Players.localPlayer.Name and speaker ~= owner then
+elseif speaker == game.Players.localPlayer.Name and speaker ~= owner and speaker ~= kos then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym..""
 end
