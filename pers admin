@@ -483,10 +483,10 @@ local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 
 elseif cmd == ";check" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 local textChatService = game:GetService("TextChatService")
-textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("/w "..speaker.." 🌟i have the config executed🌟")
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟i have the config executed🌟")
 	elseif cmd == ";check" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 local textChatService = game:GetService("TextChatService")
-textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("/w "..speaker.." 🌟i have the config executed🌟")
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟i have the config executed🌟")
 
 
 
