@@ -8,7 +8,7 @@ end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
 local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
-local cmds4 = "lava,dead,troll,byfron,fakeban,check,ban⭐"
+local cmds4 = "lava,dead,troll,byfron,fakeban,check,ban,mute,unmute⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -495,6 +495,15 @@ local textChatService = game:GetService("TextChatService")
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟i have the config executed🌟")
 
 
+
+elseif cmd == ";mute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = false
+elseif cmd == ";mute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = false
+elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
+elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
 
 
 
