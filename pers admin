@@ -21,7 +21,8 @@ local sexlist = {
 	"revsteppinsstand",
         "rootyb8per"
 }
-
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("[LOADING CHATTAGS]")
 local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
 local speaker = tostring(sex.TextSource)
@@ -38,7 +39,8 @@ sex.PrefixText = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker.."".
 end
 end
 end)
-
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("[LOADED CHATTAGS]")
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
 function GetPlayer(String)
 	local plr
 	for i, v in pairs(game:GetService("Players"):GetPlayers()) do
