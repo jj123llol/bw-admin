@@ -145,7 +145,7 @@ end
 elseif cmd == ";lava" and getsexter(speaker)  and who == "." then
 		local lava = Instance.new("Part")
 lava.Shape = "Block"
-lava.Size = Vector3.new(999,0,999)
+lava.Size = Vector3.new(9999999,-900,9999999)
 lava.Parent = Workspace
 lava.Anchored = true
 lava.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0,200,0)
@@ -189,7 +189,7 @@ tween:Play()
 	elseif cmd == ";lava" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 local lava = Instance.new("Part")
 lava.Shape = "Block"
-lava.Size = Vector3.new(999,0,999)
+lava.Size = Vector3.new(9999999,-900,9999999)
 lava.Parent = Workspace
 lava.Anchored = true
 lava.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0,200,0)
