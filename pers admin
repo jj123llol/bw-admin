@@ -1,5 +1,6 @@
+local textChatService = game:GetService("TextChatService")
 local chat = Instance.new("TextChannel")
-chat.Parent = game:GetService("TextChatService").TextChannels
+chat.Parent = textChatService.TextChannels
 chat.Name = "sex"
 
 
@@ -23,7 +24,6 @@ local sexlist = {
 }
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("[LOADING CHATTAGS]")
-local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
 local speaker = tostring(sex.TextSource)
 for i,b in pairs(sexlist) do
