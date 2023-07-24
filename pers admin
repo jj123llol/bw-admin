@@ -1,3 +1,4 @@
+local owner = "Real_revvybxnned2"
 local done = false
 local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
@@ -25,6 +26,9 @@ sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""
 elseif speaker == "hippysipp_y" then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[adolf hitler]</font> "..speaker..""..sym..""
+elseif speaker == game.Players.localPlayer.Name and speaker ~= owner then
+local sym = ":"
+sex.PrefixText = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym..""
 end
 end
 end)
