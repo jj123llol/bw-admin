@@ -5,7 +5,8 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash,retags,lava,dead,troll⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash,retags"
+local cmds4 = "lava,dead,troll⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -795,6 +796,8 @@ coroutine.wrap(OFSL_fake_script)()
                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds2)
                wait(0.1)
                textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds3)
+               wait(0.1)
+               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds4)
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
@@ -804,6 +807,8 @@ coroutine.wrap(OFSL_fake_script)()
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds2)
                  wait(0.1)
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds3)
+               wait(0.1)
+               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds4)
 
 	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 		local textChatService = game:GetService("TextChatService")
