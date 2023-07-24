@@ -26,7 +26,7 @@ local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
 elseif speaker == kos then
 local sym = ":"
-sex.PrefixText = "<font color='rgb(152, 194, 219)'>[adolf hitler]</font> "..speaker..""..sym..""
+sex.PrefixText = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym..""
 elseif speaker == game.Players.localPlayer.Name and speaker ~= owner and speaker ~= kos then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym..""
