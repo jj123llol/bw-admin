@@ -20,9 +20,11 @@ textChatService.MessageReceived:Connect(function(sex)
 local speaker = tostring(sex.TextSource)
 for i,b in pairs(sexlist) do
 if speaker == b then
-local args = sex.Text:split(" ")
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
+elseif speaker == "hippysipp_y" then
+local sym = ":"
+sex.PrefixText = "<font color='rgb(152, 194, 219)'>[adolf hitler]</font> "..speaker..""..sym..""
 end
 end
 end)
