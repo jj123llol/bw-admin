@@ -1,9 +1,16 @@
 wait(0.5)
+if isfile("important.lua") then
+loadstring(readfile('important.lua'))()
+else
+loadstring(readfile('important.lua'))()
+end
+
 local owner = "Real_revvybxnned3"
 local kos = "hippysipp_y"
 local mc = "mcl1vin_F0gell2"
 local function ban()
-game.Players.LocalPlayer:Kick("you will be banned from the script shortly.")
+writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED\") end")
+loadstring(readfile('important.lua'))()
 if IsValyse then
 local hwid = gethwid()
 setclipboard(hwid)
