@@ -1,3 +1,4 @@
+wait(0.5)
 local owner = "Real_revvybxnned3"
 local kos = "hippysipp_y"
 local mc = "mcl1vin_F0gell2"
