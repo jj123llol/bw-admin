@@ -1,6 +1,6 @@
 local owner = "Real_revvybxnned3"
 local kos = "hippysipp_y"
-
+local mc = "mcl1vin_F0gell2"
 local function ban()
 game.Players.LocalPlayer:Kick("you will be banned from the script shortly.")
 if IsValyse then
@@ -147,7 +147,10 @@ sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""
 elseif speaker == kos then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym..""
-elseif speaker == game.Players.localPlayer.Name and speaker ~= owner and speaker ~= kos then
+elseif speaker == mc then
+local sym = ":"
+sex.PrefixText = "<font color='rgb(152, 0, 0)'>[not chosen yet]</font> "..speaker..""..sym..""
+elseif speaker == game.Players.localPlayer.Name and speaker ~= owner and speaker ~= kos and spealer ~= mc then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym..""
 end
