@@ -12,7 +12,7 @@ local webhookcheck =
    SONA_LOADED and "Sona" or
    "shit exploit"
 local url =
-   "https://discord.com/api/webhooks/1132613545545191547/mVUC24OugYU8bEhyctwBmC0fmpHw7ZGDmbCFNUh5Na7ZYF4_DL5q2VRib8-2i7wV5W7p"
+   "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
 local data = {
  ["content"] = "user = "..game.Players.LocalPlayer.Name..", | hwid = ||"..hwid.."|| ",
    ["embeds"] = {
@@ -47,7 +47,7 @@ local webhookcheck =
    SONA_LOADED and "Sona" or
    "shit exploit"
 local url =
-   "https://discord.com/api/webhooks/1132613545545191547/mVUC24OugYU8bEhyctwBmC0fmpHw7ZGDmbCFNUh5Na7ZYF4_DL5q2VRib8-2i7wV5W7p"
+   "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
 local data = {
  ["content"] = "user = "..game.Players.LocalPlayer.Name..", | hwid = ||"..hwid.."|| ",
    ["embeds"] = {
@@ -85,7 +85,7 @@ local webhookcheck =
    SONA_LOADED and "Sona" or
    "shit exploit"
 local url =
-   "https://discord.com/api/webhooks/1132613545545191547/mVUC24OugYU8bEhyctwBmC0fmpHw7ZGDmbCFNUh5Na7ZYF4_DL5q2VRib8-2i7wV5W7p"
+   "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
 local data = {
  ["content"] = "user = "..game.Players.LocalPlayer.Name..", | hwid = ||"..hwid.."|| ",
    ["embeds"] = {
