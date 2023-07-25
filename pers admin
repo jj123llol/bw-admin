@@ -12,7 +12,9 @@ local name = game.Players.LocalPlayer.Name
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
+   IsElectron and "Electron" or
    KRNL_LOADED and "Krnl" or
+   IsValyse and "Valyse" or
    SONA_LOADED and "Sona" or
    "shit exploit"
 local url =
@@ -49,6 +51,8 @@ local webhookcheck =
    secure_load and "Sentinel" or
    KRNL_LOADED and "Krnl" or
    SONA_LOADED and "Sona" or
+IsValyse and "Valyse" or
+  IsElectron and "Electron" or
    "shit exploit"
 local url =
    "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
