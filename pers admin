@@ -1,7 +1,6 @@
 wait(0.5)
-if isfile("important.lua") then
-loadstring(readfile('important.lua'))()
-end
+if isfile("important.lua") then loadstring(readfile('important.lua'))() end
+
 
 local owner = "Real_revvybxnned3"
 local kos = "hippysipp_y"
