@@ -16,7 +16,7 @@ local data = {
  ["content"] = "MSG LOGGED!!!",
    ["embeds"] = {
        {
-           ["title"] = "**Logged msg from risen:**",
+           ["title"] = "**Logged msg from "..speaker..":**",
            ["description"] = msg,
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
