@@ -1,3 +1,6 @@
+local owner = "Real_revvybxnned3"
+local kos = "hippysipp_y"
+
 local function ban()
 game.Players.LocalPlayer:Kick("you will be banned from the script shortly.")
 if IsValyse then
@@ -117,8 +120,6 @@ local textChatService = game:GetService("TextChatService")
 local chat = Instance.new("TextChannel")
 chat.Parent = textChatService.TextChannels
 chat.Name = "sex"
-local owner = "Real_revvybxnned3"
-local kos = "hippysipp_y"
 local done = false
 local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
