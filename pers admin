@@ -311,16 +311,23 @@ local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash
 local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat,lag,unlag⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
+
 local sexlist = {
 	"Real_revvybxnned3",
 	"revsteppinsstand",
         "rootyb8per"
 }
+
+local normal = {
+    "BritBoy009"
+}
+
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("[LOADING CHATTAGS]")
 textChatService.MessageReceived:Connect(function(sex)
 local speaker = tostring(sex.TextSource)
 for i,b in pairs(sexlist) do
+for i,c in(normal) do
 if speaker == b then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
@@ -330,9 +337,10 @@ sex.PrefixText = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker.
 elseif speaker == mc then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(200, 0, 0)'>[RISENFEM]</font> "..speaker..""..sym..""
-elseif speaker == game.Players.localPlayer.Name and speaker ~= owner and speaker ~= kos and speaker ~= mc then
+elseif speaker == c and speaker ~= owner and speaker ~= kos and speaker ~= mc then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym..""
+end
 end
 end
 end)
