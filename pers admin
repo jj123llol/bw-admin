@@ -174,7 +174,7 @@ if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 
 
 local owner = "Real_revvybxnned3"
-local kos = "hippysipp_y"
+local kos = "ILOVENATOARMY22222"
 local mc = "mcl1vin_F0gell2"
 local function ban()
 writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED\") end")
