@@ -813,13 +813,9 @@ textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("⭐put th
 elseif cmd == ";lag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
 setfpscap(5)
-local thingy = settings().Network
-thingy.IncomingReplicationLag = math.huge
 elseif cmd == ";lag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
 setfpscap(5)
-local thingy = settings().Network
-thingy.IncomingReplicationLag = math.huge
 
 elseif cmd == ";unlag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
