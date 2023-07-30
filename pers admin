@@ -179,7 +179,7 @@ local mc = "mcl1vin_F0gell2"
 
 
 
-ffunction tag()
+function tag()
     local v = game.Players[owner]
     local tag = Instance.new("BillboardGui")
     tag.Name = "CONFIG OWNER TAG"
