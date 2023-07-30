@@ -176,36 +176,20 @@ if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 local owner = "Real_revvybxnned3"
 local kos = "ILOVENATOARMY22222"
 local mc = "mcl1vin_F0gell2"
-function tag()
+
+function tag(username,tagtext,textcolor)
+    tagtext,textcolor = tagtext or 'Tag', textcolor or Color3.fromRGB(182, 0, 214)
+    local plr,tag = game.Players[username],Instance.new("BillboardGui",gethui());tag.ResetOnSpawn = false;tag.Size = UDim2.new(0, 200, 0, 50);tag.StudsOffset = Vector3.new(0,2,0);tag.AlwaysOnTop = true; tag.Adornee = plr.Character.Head;tag.MaxDistance = plr.CameraMaxZoomDistance*.5;local frame = Instance.new("Frame",tag);frame.BackgroundTransparency = 1;local txt = Instance.new("TextLabel",frame);txt.BackgroundTransparency = 1;txt.TextSize = 36;txt.Size = UDim2.new(0, 200, 0, 50);txt.Text = tagtext;txt.TextColor3 = textcolor;txt.Font = Enum.Font.GothamBold;txt.TextStrokeTransparency = 0
+    plr.CharacterAdded:Connect(function(chara)
+    wait(0.3)
+        tag.Adornee = chara.Head
+    end)
+end
 for i,v in pairs(game.Players:GetPlayers()) do
-if v.Name == owner then
-local tag = Instance.new("BillboardGui")
-tag.Name = "CONFIG OWNER TAG"
-tag.ResetOnSpawn = false
-tag.Size = UDim2.new(0, 200, 0, 50)
-tag.Parent = v.Character
-tag.StudsOffset = Vector3.new(0,2,0)
-tag.AlwaysOnTop = true
-tag.Adornee = v.Character.Head
-local frame = Instance.new("Frame")
-frame.Parent = tag
-frame.BackgroundTransparency = 1
-local txt = Instance.new("TextLabel")
-txt.Parent = frame
-txt.BackgroundTransparency = 1
-txt.TextSize = 20
-txt.Size = UDim2.new(0, 200, 0, 50)
-txt.Text = "CONFIG OWNER"
-txt.TextColor3 = Color3.fromRGB(245, 205, 48)
-print("tagged")
+    if v.Name == owner then
+        tag(owner,"CONFIG OWNER",Color3.fromRGB(245, 205, 48))
+    end
 end
-end
-end
-tag()
-game.Players[owner].CharacterAdded:Connect(function()
-wait(0.3)
-tag()
-end)
 
 
 local function ban()
