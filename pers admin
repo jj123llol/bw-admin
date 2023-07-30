@@ -202,11 +202,12 @@ print("tagged")
 end
 end
 end
-tag()
 game.Players[owner].CharacterAdded:Connect(function()
 wait(0.3)
 tag()
 end)
+
+tag()
 
 
 local function ban()
