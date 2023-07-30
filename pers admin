@@ -336,7 +336,8 @@ local sexlist = {
 
 local normal = {
 "BritBoy009",
-"whywow171"
+"whywow171",
+"awdaokwdoiasjmi"
 }
 
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
