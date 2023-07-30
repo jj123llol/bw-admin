@@ -1,5 +1,6 @@
 wait(0.5)
 --ALL MSG LOGGER
+--[[
 local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
 local speaker = tostring(sex.TextSource)
@@ -35,8 +36,9 @@ request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
 end)
-
+--]]
 -----
+--[[
 --CHAT LOGGER FOR RISEN--
 local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
@@ -75,6 +77,8 @@ local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
 end
 end)
+--]]
+--[[
 --CHAT LOGGER FOR ALL--
 local textChatService = game:GetService("TextChatService")
 textChatService.MessageReceived:Connect(function(sex)
@@ -114,7 +118,7 @@ local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
 end
 end)
-
+--]]
 
 
 --NEXT--
