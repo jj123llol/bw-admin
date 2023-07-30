@@ -204,14 +204,7 @@ end
 end
 tag()
 
-for i,v in pairs(game.Players:GetPlayers()) do
-if v.Name == owner then
-game.Players[owner].CharacterAdded:Connect(function()
-wait(0.4)
-tag()
-end
-end
-end)
+
 
 
 local function ban()
