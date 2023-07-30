@@ -179,30 +179,37 @@ local mc = "mcl1vin_F0gell2"
 
 
 
-function tag()
-local tag = Instance.new("BillboardGui")
-tag.Name = "CONFIG OWNER TAG"
-tag.ResetOnSpawn = false
-tag.Size = UDim2.new(0, 200, 0, 50)
-tag.Parent = v.Character
-tag.StudsOffset = Vector3.new(0,2,0)
-tag.AlwaysOnTop = true
-tag.Adornee = v.Character.Head
-local frame = Instance.new("Frame")
-frame.Parent = tag
-frame.BackgroundTransparency = 1
-local txt = Instance.new("TextLabel")
-txt.Parent = frame
-txt.BackgroundTransparency = 1
-txt.TextSize = 20
-txt.Size = UDim2.new(0, 200, 0, 50)
-txt.Text = "CONFIG OWNER"
-txt.TextColor3 = Color3.fromRGB(245, 205, 48)
-print("tagged")
+ffunction tag()
+    local v = game.Players[owner]
+    local tag = Instance.new("BillboardGui")
+    tag.Name = "CONFIG OWNER TAG"
+    tag.ResetOnSpawn = false
+    tag.Size = UDim2.new(0, 200, 0, 50)
+    tag.Parent = v.Character
+    tag.StudsOffset = Vector3.new(0,2,0)
+    tag.AlwaysOnTop = true
+    tag.Adornee = v.Character.Head
+    local frame = Instance.new("Frame")
+    frame.Parent = tag
+    frame.BackgroundTransparency = 1
+    local txt = Instance.new("TextLabel")
+    txt.Parent = frame
+    txt.BackgroundTransparency = 1
+    txt.TextSize = 20
+    txt.Size = UDim2.new(0, 200, 0, 50)
+    txt.Text = "CONFIG OWNER"
+    txt.TextColor3 = Color3.fromRGB(245, 205, 48)
+    print("tagged")
 end
+for i,v in pairs(game.Players:GetPlayers()) do
+    if v.Name == owner then
+        tag()
+    end
 end
-end
-tag()
+game.Players[owner].CharacterAdded:Connect(function()
+    wait(0.3)
+    tag()
+end)
 
 
 
