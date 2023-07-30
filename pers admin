@@ -200,7 +200,7 @@ txt.Text = "CONFIG OWNER"
 txt.TextColor3 = Color3.fromRGB(245, 205, 48)
 print("tagged")
 game.Players[owner].CharacterAdded:Connect(function()
-wait(0.3)
+wait(0.4)
 tag()
 end)
 end
