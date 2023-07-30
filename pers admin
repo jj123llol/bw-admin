@@ -208,8 +208,6 @@ print("tagged")
 end
 end
 end
-tag()
-
 for i,v in pairs(game.Players:GetPlayers()) do
 if v.Name == owner then
 game.Players[owner].CharacterAdded:Connect(function()
@@ -218,7 +216,7 @@ tag()
 end)
 end
 end
-
+tag()
 
 local function ban()
 writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED\") end")
