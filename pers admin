@@ -359,7 +359,10 @@ local normal = {
 "whywow171",
 "awdaokwdoiasjmi",
 "Gdoggs_yourlocalsw",
-"ammo7883"
+"ammo7883",
+"Rez_b45",
+"BUILDERRMANDIC0K",
+"JeffsunDy",
 }
 
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
