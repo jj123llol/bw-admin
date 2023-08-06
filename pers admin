@@ -178,7 +178,7 @@ if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 
 local owner = "dfgfdgfdgfdg9"
 local kos = "ILOVENATOARMY22222"
-local mc = "mcl1vin_F0gell2"
+local mc = "5nightsinfreddyfaz"
 
 
 
