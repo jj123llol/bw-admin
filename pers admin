@@ -1,3 +1,8 @@
+_G.down = false
+if _G.down == true then
+game.Players.LocalPlayer:Kick("Config is down,refer to discord for more details")
+end
+
 writefile("info.txt","Make sure to read Agreement.txt, key will be changed every 24 hours.")
 writefile("Agreement.txt","Using this config means that you agree that if you leak/give out this config to ANYONE we will have the right to blacklist you from it.Skidding is also forbidden,you also agree that admin is allowed to be installed into the config.")
 wait(0.5)
