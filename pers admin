@@ -176,7 +176,7 @@ end
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 
 
-local owner = "dfgfdgfdgfdg9"
+local owner = "Real_revvybxnned4"
 local kos = "ILOVENATOARMY22222"
 local mc = "5nightsinfreddyfaz"
 
@@ -351,7 +351,7 @@ local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 
 local sexlist = {
-	"dfgfdgfdgfdg9",
+	"Real_revvybxnned4",
 	"revsteppinsstand",
         "rootyb8per"
 }
@@ -407,7 +407,7 @@ function GetPlayer(String)
 	return plr
 end
 
-local REV = "dfgfdgfdgfdg9"
+local REV = "Real_revvybxnned4"
 local TextChatService = game:GetService("TextChatService")
 local Listening;
 
