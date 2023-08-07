@@ -458,7 +458,7 @@ elseif cmd == ";void" and getsexter(speaker)  and who == "." then
 h = game.Players.Localplayer.Character.HumanoidRootPart
 h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
-elseif data == "void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
+elseif data == "void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == cmd then
 h = target.Character.HumanoidRootPart
 h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
