@@ -367,7 +367,6 @@ local normal = {
 "BUILDERRMANDIC0K",
 "JeffsunDy",
 "october5th_2000",
-name,
 }
 
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
