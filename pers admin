@@ -218,7 +218,7 @@ end
 tag()
 
 local function ban()
-writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED\") end")
+writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED, dm jude_or_rev on discord to appeal \") end")
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 if IsValyse then
 local hwid = gethwid()
