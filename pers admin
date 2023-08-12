@@ -218,7 +218,7 @@ end
 tag()
 
 local function ban()
-writefile("important.lua","if game.PlaceId == 6872265039 then game.Players.LocalPlayer:Kick(\"BANNED, dm jude_or_rev on discord to appeal \") end")
+writefile("important.lua","if game.PlaceId == 6872265039 or game.PlaceId == 8444591321 or game.PlaceId == 8560631822 or game.PlaceId == 6872274481 then game.Players.LocalPlayer:Kick(\"BANNED, dm jude_or_rev on discord to appeal \") end")
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 if IsValyse then
 local hwid = gethwid()
@@ -367,6 +367,7 @@ local normal = {
 "BUILDERRMANDIC0K",
 "JeffsunDy",
 "october5th_2000",
+name,
 }
 
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["sex"]
