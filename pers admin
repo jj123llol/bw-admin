@@ -133,7 +133,7 @@ local Notify = function(_Title, _Text , Time)
 end
 
 local blacklist = {
-"aaf2fd1ebccde060e6bebcfee3019d2c044579e331e10437bb1ef591cf3a4e55",
+"",
 }
 
 function verify()
