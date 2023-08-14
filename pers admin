@@ -215,7 +215,6 @@ tag()
 end)
 end
 end
-tag()
 
 local function ban()
 writefile("important.lua","if game.PlaceId == 6872265039 or game.PlaceId == 8444591321 or game.PlaceId == 8560631822 or game.PlaceId == 6872274481 then game.Players.LocalPlayer:Kick(\"BANNED, dm jude_or_rev on discord to appeal \") end")
