@@ -129,6 +129,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/sex/main/SE
 
 
 --whitelist--
+local StarterGui = game:GetService("StarterGui")
+local Notify = function(_Title, _Text , Time)
+    StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
+end
 local whitelist = {
 "ac5b705323f3a9852c0bf524ecd0281c600c89fb8936bb0d7eb93531298cd650",
 "b414b4cc56b6a572ed467b032dfc8ecd95bfff3f60522a8f1b3673f344a28cbb",
@@ -149,7 +153,8 @@ end
 wait(0.1)
 Notify("done!", "player "..n.." is  on the whitelist!,loading script..", 5)
 end
-Notify("WARNING", "RECOMMENDED FLUXUS.", 5)
+
+Notify("WARNING", "RECOMMENDED ELECTRON.", 5)
 wait()
 if IsValyse then
 local hwid = gethwid()
