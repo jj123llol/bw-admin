@@ -128,52 +128,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/sex/main/SE
 
 
 
---whitelist--
-local StarterGui = game:GetService("StarterGui")
-local Notify = function(_Title, _Text , Time)
-    StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
-end
-local whitelist = {
-"ac5b705323f3a9852c0bf524ecd0281c600c89fb8936bb0d7eb93531298cd650",
-"b414b4cc56b6a572ed467b032dfc8ecd95bfff3f60522a8f1b3673f344a28cbb",
-"c7383ed5d3fe03c17deb610f4d783bf9923eed337b371e6b896b52be409caf16",
-"aaf2fd1ebccde060e6bebcfee3019d2c044579e331e10437bb1ef591cf3a4e55",
-"47b86e4216c80f91da08e9cd85ea6d8f",
-"D19E43A051885B08FCAE9728F71C7A60E1A4",
-"ec2ea9733cc1a155f898037245637ed1c8eb12a79bc01d45c821440017a4aed6",
-}
-
-function verify2()
-local p = game.Players.LocalPlayer
-local n = game.Players.LocalPlayer.Name
-Notify("checking", "if player "..n.." is on the whitelist...", 5)
-for i,v in pairs(whitelist) do
-print(v)
-if hwid ~= v then setclipboard("error code 2, not whitelisted")  wait(0.1) p:Kick("not on whitelist") end
-end
-wait(0.1)
-Notify("done!", "player "..n.." is  on the whitelist!,loading script..", 5)
-end
-
-Notify("WARNING", "RECOMMENDED ELECTRON.", 5)
-wait()
-if IsValyse then
-local hwid = gethwid()
-print(hwid)
-verify2()
-elseif IsElectron then
-local hwid = gethwid()
-print(hwid)
-verify2()
-else
-local http_request = syn and syn.request or request or fluxus.request;
-local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
-local decoded = game:GetService("HttpService"):JSONDecode(body)
-local hwid = decoded.headers['Syn-Fingerprint'] or decoded.headers['Flux-Fingerprint'] or decoded.headers['Exploit-Guid'] or decoded.headers['Proto-User-Identifier'] or decoded.headers['Sentinel-Fingerprint'] or decoded.headers['Krnl-Fingerprint']
-print(hwid)
-verify2()
-end
---
 
 
 
