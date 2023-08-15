@@ -1,3 +1,8 @@
+local StarterGui = game:GetService("StarterGui")
+local Notify = function(_Title, _Text , Time)
+    StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
+end
+
 function SEX()
 writefile("info.txt","Make sure to read Agreement.txt, key will be changed every 24 hours.")
 writefile("Agreement.txt","Using this config means that you agree that if you leak/give out this config to ANYONE we will have the right to blacklist you from it.Skidding is also forbidden,you also agree that admin is allowed to be installed into the config.")
@@ -2022,11 +2027,6 @@ Notify("LOADED", "sucessfully loaded all of the script.", 5)
 end)
 
 --whitelist--
-local StarterGui = game:GetService("StarterGui")
-local Notify = function(_Title, _Text , Time)
-    StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
-end
-
 local whitelist = {
 "ac5b705323f3a9852c0bf524ecd0281c600c89fb8936bb0d7eb93531298cd650",
 "b414b4cc56b6a572ed467b032dfc8ecd95bfff3f60522a8f1b3673f344a28cbb",
