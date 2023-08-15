@@ -425,18 +425,6 @@ elseif cmd == ";void" and getsexter(speaker)  and who == "." then
 h = game.Players.Localplayer.Character.HumanoidRootPart
 h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
-elseif data == "void" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == cmd then
-h = target.Character.HumanoidRootPart
-h.CFrame = h.CFrame - Vector3.new(0,1000,0)
-
-elseif data == "void" and getsexter(speaker)  and who == "." then
-h = game.Players.Localplayer.Character.HumanoidRootPart
-h.CFrame = h.CFrame - Vector3.new(0,1000,0)
-
-elseif prompt.Metadata == "test" and getsexter(speaker) then
-local ts = game:GetService("TextChatService")
-ts.ChatInputBarConfiguration.TargetTextChannel:SendAsync("secret msg found!")
-
 elseif cmd == ";lava" and getsexter(speaker)  and who == "." then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
