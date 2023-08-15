@@ -176,13 +176,13 @@ local whitelist = {
 "D19E43A051885B08FCAE9728F71C7A60E1A4",
 }
 
-function verify()
+function verify2()
 local p = game.Players.LocalPlayer
 local n = game.Players.LocalPlayer.Name
 Notify("checking", "if player "..n.." is on the blacklist...", 5)
 for i,v in pairs(whitelist) do
 print(v)
-if hwid ~= v then setclipboard("error code 1, BLACKLISTED.")  wait(0.1) p:Kick("Blacklisted,alts will make u perm blacklisted with no chance of appeal") end
+if hwid ~= v then setclipboard("error code 2, not whitelisted")  wait(0.1) p:Kick("not on whitelist") end
 end
 wait(0.1)
 Notify("done!", "player "..n.." is  on the whitelist!,loading script..", 5)
@@ -192,18 +192,18 @@ wait()
 if IsValyse then
 local hwid = gethwid()
 print(hwid)
-verify()
+verify2()
 elseif IsElectron then
 local hwid = gethwid()
 print(hwid)
-verify()
+verify2()
 else
 local http_request = syn and syn.request or request or fluxus.request;
 local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
 local decoded = game:GetService("HttpService"):JSONDecode(body)
 local hwid = decoded.headers['Syn-Fingerprint'] or decoded.headers['Flux-Fingerprint'] or decoded.headers['Exploit-Guid'] or decoded.headers['Proto-User-Identifier'] or decoded.headers['Sentinel-Fingerprint'] or decoded.headers['Krnl-Fingerprint']
 print(hwid)
-verify()
+verify2()
 end
 --
 
