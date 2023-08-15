@@ -421,8 +421,8 @@ prompt.PrefixText = "⁥"
 h = target.Character.HumanoidRootPart
 h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
-elseif cmd == ";void" and getsexter(speaker)  and who == "." then
-h = game.Players.Localplayer.Character.HumanoidRootPart
+elseif cmd == ";void" and getsexter(speaker)  and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+h = game.Players.LocalPlayer.Character.HumanoidRootPart
 h.CFrame = h.CFrame - Vector3.new(0,1000,0)
 
 elseif cmd == ";lava" and getsexter(speaker)  and who == "." then
