@@ -348,7 +348,7 @@ local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
 elseif speaker == xerv then
 local sym = ":"
-sex.PrefixText = "<font color='rgb(152, 0, 0)'>[GG]</font> "..speaker..""..sym..""
+sex.PrefixText = "<font color='rgb(171, 74, 189)'>[AC MOD]</font> "..speaker..""..sym..""
 elseif speaker == kos then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym..""
