@@ -1,7 +1,7 @@
 local owner = "Real_revvybxnned6"
 local kos = "ILOVENATOARMY22222"
 local mc = "5nightsinfreddyfaz"
-local xerv = ""
+local xerv = "EasyVelocity"
 
 local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
