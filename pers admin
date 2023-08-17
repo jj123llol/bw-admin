@@ -1,3 +1,8 @@
+local owner = "Real_revvybxnned6"
+local kos = "ILOVENATOARMY22222"
+local mc = "5nightsinfreddyfaz"
+local xerv = ""
+
 local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
@@ -141,9 +146,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/sex/main/SE
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 
 
-local owner = "Real_revvybxnned6"
-local kos = "ILOVENATOARMY22222"
-local mc = "5nightsinfreddyfaz"
+
 
 
 
@@ -343,6 +346,9 @@ for i,c in(normal) do
 if speaker == b then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym..""
+elseif speaker == xerv then
+local sym = ":"
+sex.PrefixText = "<font color='rgb(152, 0, 0)'>[GG]</font> "..speaker..""..sym..""
 elseif speaker == kos then
 local sym = ":"
 sex.PrefixText = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym..""
