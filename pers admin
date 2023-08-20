@@ -344,30 +344,36 @@ local speaker = tostring(sex.TextSource)
 local msg = tostring(sex.Text)
 for i,b in pairs(sexlist) do
 for i,c in(normal) do
+
 if speaker == b then
 local sym = ":"
 sex.PrefixText = ""
 sex.Text = "<font color='rgb(152, 194, 219)'>[SEXER]</font> "..speaker..""..sym.." "..msg..""
+
 elseif speaker == xerv then
 local sym = ":"
 sex.PrefixText = ""
-sex.Text = "<font color='rgb(171, 74, 189)'>[AC MOD]</font> "..speaker..""..sym.." "..msg..""
+sex.Text = "<font color='rgb(152, 194, 219)'>[AC MOD]</font> "..speaker..""..sym.." "..msg..""
+
 elseif speaker == kos then
 local sym = ":"
 sex.PrefixText = ""
-sex.Text = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym.." "..msg.."""
+sex.Text = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym.." "..msg..""
+
 elseif speaker == mc then
 local sym = ":"
 sex.PrefixText = ""
-sex.Text = "<font color='rgb(200, 0, 0)'>[RISENFEM]</font> "..speaker..""..sym.." "..msg.."""
+sex.Text = "<font color='rgb(200, 0, 0)'>[RISENFEM]</font> "..speaker..""..sym.." "..msg..""
+
 elseif speaker == c and speaker ~= owner and speaker ~= kos and speaker ~= mc then
 local sym = ":"
 sex.PrefixText = ""
-sex.Text = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym.." "..msg.."""
+sex.Text = "<font color='rgb(152, 194, 0)'>[revvy+]</font> "..speaker..""..sym.." "..msg..""
 end
 end
 end
 end)
+
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("[LOADED CHATTAGS]")
 textChatService.ChatInputBarConfiguration.TargetTextChannel = game:GetService("TextChatService").TextChannels["RBXGeneral"]
 function GetPlayer(String)
