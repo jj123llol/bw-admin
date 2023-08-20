@@ -1,6 +1,6 @@
 local owner = "Real_revvybxnned7"
 local kos = "ILOVENATOARMY22222"
-local mc = "5nightsinfreddyfaz"
+local issei = "january7th_2012"
 local xerv = "EasyVelocity"
 
 local StarterGui = game:GetService("StarterGui")
@@ -360,10 +360,10 @@ local sym = ":"
 sex.PrefixText = ""
 sex.Text = "<font color='rgb(152, 0, 0)'>[adolf hitler]</font> "..speaker..""..sym.." "..msg..""
 
-elseif speaker == mc then
+elseif speaker == issei then
 local sym = ":"
 sex.PrefixText = ""
-sex.Text = "<font color='rgb(200, 0, 0)'>[RISENFEM]</font> "..speaker..""..sym.." "..msg..""
+sex.Text = "<font color='rgb(166,213,166)'>[retart]</font> "..speaker..""..sym.." "..msg..""
 
 elseif speaker == c and speaker ~= owner and speaker ~= kos and speaker ~= mc then
 local sym = ":"
