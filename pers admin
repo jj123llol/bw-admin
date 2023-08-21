@@ -896,19 +896,25 @@ textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("🌟i hav
 elseif cmd == ";mute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.TextEditable = false
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.Visible = false
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = false
 elseif cmd == ";mute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.TextEditable = false
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.Visible = false
 game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = false
 elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
-game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.TextEditable = true
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.Visible = true
 elseif cmd == ";unmute" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
 prompt.PrefixText = "⁥"
-game:GetService("TextChatService").ChatInputBarConfiguration.Enabled = true
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.TextEditable = true
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ChatGui.Inputbar.TextInput.Visible = true
 
 
 elseif cmd == ";funnymsg" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
