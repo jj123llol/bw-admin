@@ -1,7 +1,7 @@
 local owner = "Real_revvybxnned7"
 
 local revvyplus = {
-"",
+"kernelis2",
 }
 
 local StarterGui = game:GetService("StarterGui")
