@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/bw-admin/main/revvy%2B%20admin",true))()
+
 local owner = "Real_revvybxnned7"
 local kos = "ILOVENATOARMY22222"
 local issei = "january7th_2012"
