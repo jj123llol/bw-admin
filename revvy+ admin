@@ -99,5 +99,14 @@ prompt.PrefixText = "⁥"
 local textChatService = game:GetService("TextChatService")
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
 textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
+
+elseif cmd == ";cmds" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." and game.Players.LocalPlayer.Name ~= REV then
+prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
+local textChatService = game:GetService("TextChatService")
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync(cmds)
+textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("asdasd")
+
+
 	end
 end)
