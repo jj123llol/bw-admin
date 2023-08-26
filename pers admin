@@ -1669,10 +1669,14 @@ h = target.Character.HumanoidRootPart
 local hev = h.CFrame + Vector3.new(0,900,0)
 local tweenService = game:GetService("TweenService")
 game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
-wait(6)
+getgenv().hev = game.Players.LocalPlayer.CharacterAdded:Connect(function()
+wait(0.3)
 local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
 local tween =tweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.94), {CFrame = hev})
 tween:Play()
+end)
+wait(9)
+hev:Disconnect()
 
 elseif cmd == ";hev" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
 prompt.Text = "⁥"
@@ -1681,10 +1685,17 @@ h = game.Players.LocalPlayer.Character.HumanoidRootPart
 local hev = h.CFrame + Vector3.new(0,900,0)
 local tweenService = game:GetService("TweenService")
 game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
-wait(6)
+getgenv().hev = game.Players.LocalPlayer.CharacterAdded:Connect(function()
+wait(0.3)
 local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
 local tween =tweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.94), {CFrame = hev})
 tween:Play()
+end)wait(6)
+local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween =tweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.94), {CFrame = hev})
+tween:Play()
+wait(9)
+hev:Disconnect()
 
 elseif cmd == ";lobby" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target then
 prompt.Text = "⁥"
