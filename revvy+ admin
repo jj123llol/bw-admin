@@ -120,5 +120,29 @@ prompt.PrefixText = "⁥"
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 
 
+
+elseif cmd == ";loopkill" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and game.Players.LocalPlayer == target and game.Players.LocalPlayer.Name ~= REV then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+getgenv().loopkill = game.Players.LocalPlayer.CharacterAdded:Connect(function()
+wait(0.3)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+elseif cmd == ";unloopkill" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and game.Players.LocalPlayer == target and game.Players.LocalPlayer.Name ~= REV then
+loopkill:Disconnect()
+
+
+
+elseif cmd == ";loopkill" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker   and who == "." and game.Players.LocalPlayer.Name ~= REV then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+getgenv().loopkill = game.Players.LocalPlayer.CharacterAdded:Connect(function()
+wait(0.3)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+elseif cmd == ";unloopkill" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker  and who == "." and game.Players.LocalPlayer.Name ~= REV then
+loopkill:Disconnect()
+
+
 	end
 end)
