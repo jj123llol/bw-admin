@@ -22,7 +22,7 @@ local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
 end
-local cmds = "⭐cmds are: void, cmds ⭐"
+local cmds = "⭐cmds are: void, cmds, reset ⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 
