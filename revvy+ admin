@@ -144,6 +144,35 @@ end)
 elseif cmd == ";unloopkill" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker  and who == "." and game.Players.LocalPlayer.Name ~= REV then
 loopkill:Disconnect()
 
+elseif cmd == ";hang" and getsexter(speaker) and game.Players.LocalPlayer.Name ~=speaker and game.Players.LocalPlayer == target and game.Players.LocalPlayer.Name ~= REV then
+local Roof = Instance.new("Part")
+local Rope = Instance.new("RopeConstraint")
+local player = target
+local char = player.Character
+char.HumanoidRootPart.CFrame = char.HumanoidRootPart.CFrame + Vector3.new(0,5,0)
+Roof.CFrame = player.Character.HumanoidRootPart.CFrame + Vector3.new(0,10,0)
+Roof.Anchored = true
+Roof.Size = Vector3.new(10,0,10)
+Roof.Parent = workspace
+Roof.Name = "ROOF"
+local Att1 = Instance.new("Attachment")
+Att1.Parent = Roof
+local Att2 = Instance.new("Attachment")
+Att2.Parent = player.Character.Head
+Rope.Length = 5
+Rope.Thickness = 0.1
+Rope.Parent = Roof
+Rope.Attachment0 = Att1
+Rope.Attachment1 = Att2
+Rope.Restitution = 1
+Rope.Enabled = true
+Rope.Visible = true
+Rope.Name = "ROPE"
+
+elseif cmd == ";unhang" and getsexter(speaker) and game.Players.LocalPlayer == target and game.Players.LocalPlayer.Name ~= REV then
+workspace.ROOF.ROPE:Destroy()
+workspace.ROOF:Destroy()
+
 
 	end
 end)
