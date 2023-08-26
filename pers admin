@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/bw-admin/main/revvy%2B%20admin",true))()
 
-local owner = "Real_revvybxnned7"
+local owner = "Real_revvybxnned8"
 local kos = "ILOVENATOARMY22222"
 local issei = "january7th_2012"
 local xerv = "EasyVelocity"
@@ -320,7 +320,7 @@ local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 
 local sexlist = {
-	"Real_revvybxnned7",
+	"Real_revvybxnned8",
 	"revsteppinsstand",
         "rootyb8per"
 }
@@ -357,7 +357,7 @@ function GetPlayer(String)
 	return plr
 end
 
-local REV = "Real_revvybxnned7"
+local REV = "Real_revvybxnned8"
 local TextChatService = game:GetService("TextChatService")
 local Listening;
 
