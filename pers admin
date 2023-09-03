@@ -60,23 +60,6 @@ writefile("important.lua","if game.PlaceId == 6872265039 or game.PlaceId == 8444
 if isfile("important.lua") then loadstring(readfile('important.lua'))() end
 local clientid = game:GetService("RbxAnalyticsService"):GetClientId()
 print(clientid)
-
-local user = game.Players.LocalPlayer.Name
-
-function sendclient(msg)
-local url = "https://discord.com/api/webhooks/1133209160419385444/Qv5AGhCFs8S6Gt12YYtSyYQVWSng2Cypwf-SReNNukq_fJHEyNHjHnywnzz155y2etSq"
-local data = {
-["content"] = msg,
-}
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-local headers = {
-["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
-end
-sendclient(""..user.." should be banned, their client id is: "..clientid.."")
 end
 
 
